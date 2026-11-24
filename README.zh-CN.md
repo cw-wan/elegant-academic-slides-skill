@@ -17,14 +17,11 @@
 
 ## 安装到 Codex
 
-可以直接对 Codex 说：
+### 推荐：从 Release 安装
 
-```text
-使用 $skill-installer 安装这个 skill：
-https://github.com/cw-wan/elegant-academic-slides-skill/tree/main/design-academic-slides
-```
-
-也可以下载或克隆本仓库，将完整的 `design-academic-slides` 子文件夹复制到目标项目的 `.agents/skills/` 下：
+1. 打开 [最新 Release](https://github.com/cw-wan/elegant-academic-slides-skill/releases/latest)，下载附件中的 skill ZIP。`v0.1.0` 的安装包名为 `design-academic-slides-v0.1.0.zip`。
+2. 解压后得到顶层文件夹 `design-academic-slides/`。
+3. 将这个完整文件夹复制到目标项目的 `.agents/skills/` 下：
 
 ```text
 你的项目/
@@ -36,6 +33,19 @@ https://github.com/cw-wan/elegant-academic-slides-skill/tree/main/design-academi
             ├── assets/
             └── references/
 ```
+
+Release ZIP 只包含可安装的 skill；完整仓库另外保留说明文档、打包脚本和持续扩充的范例目录。每个 Release 另附 `SHA256SUMS.txt`，用于核对安装包的 SHA-256 校验值。
+
+### 从源码安装
+
+也可以直接对 Codex 说：
+
+```text
+使用 $skill-installer 安装这个 skill：
+https://github.com/cw-wan/elegant-academic-slides-skill/tree/main/skills/design-academic-slides
+```
+
+若手动下载或克隆完整仓库，请复制其中的 `skills/design-academic-slides/` 到目标项目的 `.agents/skills/` 下。
 
 仓库名是 `elegant-academic-slides-skill`，安装后的内部调用名仍然是 **`$design-academic-slides`**。安装位置与安装器的说明见 [Codex 官方 skill 文档](https://learn.chatgpt.com/docs/build-skills)。
 
@@ -69,18 +79,49 @@ https://github.com/cw-wan/elegant-academic-slides-skill/tree/main/design-academi
 
 ## 文件与参考指南
 
-入口是 [SKILL.md](design-academic-slides/SKILL.md)。`agents/openai.yaml` 提供界面元数据，`assets/icon.svg` 是 skill 图标；详细规范按任务放在 `references/` 中：
+```text
+elegant-academic-slides-skill/
+├── README.md
+├── README.zh-CN.md
+├── .gitignore
+├── skills/
+│   └── design-academic-slides/
+│       ├── SKILL.md
+│       ├── agents/
+│       ├── assets/
+│       └── references/
+├── examples/
+│   └── README.md
+└── scripts/
+    └── package_skill.py
+```
+
+入口是 [SKILL.md](skills/design-academic-slides/SKILL.md)。skill 内的 `agents/openai.yaml` 提供界面元数据，`assets/icon.svg` 是图标；详细规范按任务放在 `references/` 中：
 
 | 指南 | 内容 |
 | --- | --- |
-| [科学内容](design-academic-slides/references/scientific-content.md) | 来源、叙事、定义、引用与结论边界 |
-| [视觉设计](design-academic-slides/references/visual-design.md) | 版式、密度、字体、图像与颜色 |
-| [科学图示](design-academic-slides/references/scientific-diagrams.md) | 系统图、树结构、反馈与状态语义 |
-| [实验证据](design-academic-slides/references/experimental-evidence.md) | 指标、比较、消融与可编辑图表数据 |
-| [修改与交付](design-academic-slides/references/revision-and-delivery.md) | 版本、批注、导出与验证 |
-| [SELA 专用配置](design-academic-slides/references/sela-profile.md) | SELA / Grammar of the Wave 的项目设计约定 |
+| [科学内容](skills/design-academic-slides/references/scientific-content.md) | 来源、叙事、定义、引用与结论边界 |
+| [视觉设计](skills/design-academic-slides/references/visual-design.md) | 版式、密度、字体、图像与颜色 |
+| [科学图示](skills/design-academic-slides/references/scientific-diagrams.md) | 系统图、树结构、反馈与状态语义 |
+| [实验证据](skills/design-academic-slides/references/experimental-evidence.md) | 指标、比较、消融与可编辑图表数据 |
+| [修改与交付](skills/design-academic-slides/references/revision-and-delivery.md) | 版本、批注、导出与验证 |
+| [SELA 专用配置](skills/design-academic-slides/references/sela-profile.md) | SELA / Grammar of the Wave 的项目设计约定 |
 
 SELA 配置是**可选的项目专用参考**，仅用于 SELA / Grammar of the Wave，或明确要求复用其视觉语言的任务。它不是所有学术报告的默认模板，也不是实验结果的数据源。该配置引用的第三方角色素材未包含在本仓库中。
+
+## 范例
+
+[examples/](examples/README.md) 用于持续收录实际制作范例，目前暂无已发布的实际范例。后续每个范例使用独立的 `kebab-case` 子目录，并说明任务、输入、输出、预览和使用方式。范例与安装包分开维护，不包含在 skill Release ZIP 中。
+
+## 构建安装包
+
+使用 Python 3.10 或更新版本，在仓库根目录运行：
+
+```sh
+python scripts/package_skill.py v0.1.0
+```
+
+脚本会生成 `dist/design-academic-slides-v0.1.0.zip` 和 `dist/SHA256SUMS.txt`。安装包内保留单一的 `design-academic-slides/` 顶层目录；生成文件由 Git 忽略，作为 GitHub Release 附件分发。
 
 ## 许可证
 
