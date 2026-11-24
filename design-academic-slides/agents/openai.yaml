@@ -1,0 +1,14 @@
+interface:
+  display_name: Academic Talk Slides
+  short_description: Evidence-led, editable research talks and diagrams
+  default_prompt: Use $design-academic-slides to create or revise an editable research
+    presentation from my paper and slide comments.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
