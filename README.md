@@ -1,33 +1,68 @@
-# Elegant Academic Slides Skill
+<p align="center">
+  <img src="skills/design-academic-slides/assets/icon.svg" width="48" height="48" alt="">
+</p>
 
-[中文说明](README.zh-CN.md) · [Install](https://github.com/cw-wan/elegant-academic-slides-skill/releases/latest) · [Examples](examples/README.md) · [Resources](docs/resources.md) · [Changelog](CHANGELOG.md)
+<h1 align="center">Elegant Academic Slides</h1>
 
-Create academic talks and industrial research seminars with a clear scientific story, precise diagrams, readable evidence, and editable presentation content.
+<p align="center">
+  <strong>Give your research a clear story and a considered design.</strong><br>
+  An agent skill for academic talks, precise figures, and editable presentations.
+</p>
 
-The current repository release is **v0.2.0**, based on the submitted skill edition **v2026.11.25.3**. The project maintains the **`design-academic-slides`** skill, installable releases, and examples archived by release version.
+<p align="center">
+  <a href="https://github.com/cw-wan/elegant-academic-slides-skill/releases/latest"><img src="https://img.shields.io/github/v/release/cw-wan/elegant-academic-slides-skill?label=release&amp;color=4c6b5d" alt="Latest release"></a>
+  <a href="skills/design-academic-slides/SKILL.md"><img src="https://img.shields.io/badge/format-SKILL.md-68758d" alt="Format: SKILL.md"></a>
+</p>
 
-## See the example
+<p align="center">
+  <strong>English</strong> · <a href="README.zh-CN.md">简体中文</a><br>
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">🖼️ See the example</a> ·
+  <a href="#quick-start">🚀 Quick start</a> ·
+  <a href="#explore">Guides &amp; resources</a>
+</p>
 
-[![Six slides from the Language-Guided Time-Series Perception seminar](examples/v0.2.0/slb-webinar-2026-11-25/previews/overview.png)](examples/v0.2.0/slb-webinar-2026-11-25/README.md)
+---
 
-**[Language-Guided Time-Series Perception: Solutions and Challenges](examples/v0.2.0/slb-webinar-2026-11-25/README.md)** is a supplied 23-slide English seminar by Chenwei Wan for the SLB AI Lab Webinar, dated 25 November 2026. Open the example for its PowerPoint, PDF, original design record, and full-size previews. These images are rendered from the supplied PDF.
+## In practice
+
+<p align="center">
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">
+    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview.png" width="920" alt="Six actual seminar slides: cover, logic tree, method, synthesis, architecture, and results">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Language-Guided Time-Series Perception: Solutions and Challenges</strong><br>
+  <sub>Chenwei Wan · SLB AI Lab Webinar · 23 slides · 25 November 2026</sub><br><br>
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">Explore the case study</a> ·
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/SLB-Webinar-261125.pptx?raw=true">Download PPTX</a> ·
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/SLB-Webinar-261125.pdf">Read the PDF</a>
+</p>
+
+The preview is rendered from the supplied PDF. The example includes the original presentation, design record, source links, and full-size images.
 
 ## What it helps with
 
-- Organize one or several papers around the audience's question.
-- Preserve the author's argument, scientific terms, numerical values, and evaluation conditions.
-- Draw method figures, logic trees, time-series annotations, and result comparisons.
-- Use Newsreader for titles and Inter for body text, labels, tables, and references, subject to the user's brief or template.
-- Refine scientific English and select useful visible annotations.
-- Apply comments to the latest accepted version and verify exported presentations.
+- **🧭 A story the audience can follow.** Organize one or several papers around a research question, preserving the argument and evidence.
+- **📐 Figures that explain the science.** Build precise method diagrams, annotated signals, and honest comparisons. Newsreader titles and Inter labels provide the default typography, subject to your brief or template.
+- **✍️ Revisions that respect your work.** Refine scientific English and apply comments to the latest accepted deck, preserving values, terminology, and unrelated slides.
 
 This is an **instruction and reference package**. Actual PPTX creation, editing, rendering, and export depend on tools available in the host agent environment. No rendering engine or presentation library is bundled.
 
-## Install
+## Quick start
 
-### Install a release
+**1. Install the skill.** Download the reviewed **[v0.2.0 installation ZIP](https://github.com/cw-wan/elegant-academic-slides-skill/releases/download/v0.2.0/design-academic-slides-v0.2.0.zip)**, extract it, and place the folder here:
 
-Open the [latest release](https://github.com/cw-wan/elegant-academic-slides-skill/releases/latest). For v0.2.0:
+```text
+your-project/.agents/skills/design-academic-slides/SKILL.md
+```
+
+**2. Bring your research.** Supply a paper, results, or an existing deck, then invoke **`$design-academic-slides`**. An example prompt is just below.
+
+<details>
+<summary><strong>Release assets, source edition, and folder structure</strong></summary>
+
+Repository release **v0.2.0** is based on submitted skill edition **v2026.11.25.3**. The [release page](https://github.com/cw-wan/elegant-academic-slides-skill/releases/latest) keeps both packages:
 
 | Asset | Purpose |
 | --- | --- |
@@ -50,7 +85,10 @@ your-project/
 
 The installation ZIP contains the skill and its six selected SVG figures. Full presentation examples and repository documentation stay in the main project. GitHub's automatically generated source archives contain the full repository.
 
-### Install from source with Codex
+</details>
+
+<details>
+<summary><strong>Install from GitHub with Codex, or use another agent</strong></summary>
 
 Ask Codex:
 
@@ -63,7 +101,9 @@ You can also clone the repository and copy `skills/design-academic-slides/` into
 
 For another agent that supports `SKILL.md`, follow its installation workflow and provide suitable presentation tools.
 
-## Use
+</details>
+
+## Try it with your research
 
 Supply the paper, data, existing deck, or comments needed for your task.
 
@@ -74,6 +114,9 @@ Use $design-academic-slides to turn the attached paper into a 12-slide,
 15-minute conference talk in English. Deliver an editable PPTX. Explain
 the task, method, main evidence, and limitations using the supplied sources.
 ```
+
+<details>
+<summary><strong>More prompts: revise a deck or prepare a Chinese research update</strong></summary>
 
 **Revise an existing deck**
 
@@ -90,9 +133,21 @@ results chart labels. Preserve the scientific values and unrelated slides.
 研究问题、方法概览、主要结果。保留准确的指标和实验设置，输出可编辑 PPTX。
 ```
 
-## Package and project
+</details>
+
+## Explore
+
+| Start here | What you will find |
+| --- | --- |
+| [Versioned examples](examples/README.md) | Actual decks, previews, and the design decisions behind them |
+| [Chinese handbook](skills/design-academic-slides/references/guide.zh-CN.md) | Worked examples and practical guidance |
+| [Resources and sources](docs/resources.md) | External skills, papers, datasets, typography, and design references |
+| [Changelog](CHANGELOG.md) | What changed in each release |
 
 The skill contains 18 files: its entry point, UI metadata, icon, nine reference guides, and six editable SVG examples.
+
+<details>
+<summary><strong>Browse all skill guides</strong></summary>
 
 | Resource | Purpose |
 | --- | --- |
@@ -110,6 +165,11 @@ The skill contains 18 files: its entry point, UI metadata, icon, nine reference 
 | [External resources](docs/resources.md) | External skills, papers, data, fonts, and presentation references |
 
 The SELA profile applies to its named project or an explicit request to reuse that design. External skills are separately maintained references, not mandatory dependencies.
+
+</details>
+
+<details>
+<summary><strong>Repository layout and release packaging</strong></summary>
 
 ```text
 elegant-academic-slides-skill/
@@ -131,7 +191,7 @@ elegant-academic-slides-skill/
 
 See the [example index](examples/README.md) for the versioned archive layout. The prior [v0.1.0 release](https://github.com/cw-wan/elegant-academic-slides-skill/releases/tag/v0.1.0) remains available.
 
-## Build a release package
+### Build a release package
 
 With Python 3.10 or later, run from the repository root:
 
@@ -141,8 +201,17 @@ python scripts/package_skill.py v0.2.0
 
 This writes `dist/design-academic-slides-v0.2.0.zip` and `dist/SHA256SUMS.txt`. To retain an original submitted package alongside the reviewed package, add `--source-archive PATH`. Generated packages are ignored by Git and distributed as Release assets.
 
+</details>
+
 ## Scope and license
 
 The skill focuses on academic talks and research seminars. Editable output and validation depend on the host environment's tools. This update was checked against the supplied seminar design record; see the [changelog](CHANGELOG.md) for release changes.
 
 No repository `LICENSE` file has been added. Third-party sources are recorded in the [resource catalog](docs/resources.md) and original design record.
+
+---
+
+<p align="center">
+  If this helps you present your research, a <strong>⭐ Star</strong> helps others find it.<br>
+  <sub>Have an example to share? See the <a href="examples/README.md">example guide</a>.</sub>
+</p>

@@ -1,33 +1,68 @@
-# Elegant Academic Slides Skill
+<p align="center">
+  <img src="skills/design-academic-slides/assets/icon.svg" width="48" height="48" alt="">
+</p>
 
-[English](README.md) · [安装](https://github.com/cw-wan/elegant-academic-slides-skill/releases/latest) · [范例目录](examples/README.md) · [资源清单](docs/resources.md) · [更新记录](CHANGELOG.md)
+<h1 align="center">Elegant Academic Slides</h1>
 
-面向论文报告、学术会议、组会和工业研究研讨会的演示文稿 skill：组织清楚的科研叙事，绘制准确的方法图，呈现可读的实验证据，并保留内容的可编辑性。
+<p align="center">
+  <strong>把研究讲清楚，也把幻灯片做好看。</strong><br>
+  一个面向学术报告、精准图示和可编辑演示文稿的 agent skill。
+</p>
 
-当前仓库版本为 **v0.2.0**，基于提交的 skill edition **v2026.11.25.3**。本项目维护 **`design-academic-slides`** 源码、可安装包和按发布版本归档的实际范例。
+<p align="center">
+  <a href="https://github.com/cw-wan/elegant-academic-slides-skill/releases/latest"><img src="https://img.shields.io/github/v/release/cw-wan/elegant-academic-slides-skill?label=release&amp;color=4c6b5d" alt="最新发布版本"></a>
+  <a href="skills/design-academic-slides/SKILL.md"><img src="https://img.shields.io/badge/format-SKILL.md-68758d" alt="格式：SKILL.md"></a>
+</p>
 
-## 查看实际效果
+<p align="center">
+  <a href="README.md">English</a> · <strong>简体中文</strong><br>
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">🖼️ 看看实际效果</a> ·
+  <a href="#快速开始">🚀 快速开始</a> ·
+  <a href="#继续探索">指南与资源</a>
+</p>
 
-[![Language-Guided Time-Series Perception 报告的六页预览](examples/v0.2.0/slb-webinar-2026-11-25/previews/overview.png)](examples/v0.2.0/slb-webinar-2026-11-25/README.md)
+---
 
-**[Language-Guided Time-Series Perception: Solutions and Challenges](examples/v0.2.0/slb-webinar-2026-11-25/README.md)** 是 Chenwei Wan 于 2026 年 11 月 25 日为 SLB AI Lab Webinar 准备的 23 页英文报告。范例页提供 PowerPoint、PDF、设计原文和完整尺寸预览；上图直接从提供的 PDF 渲染。
+## 实际效果
+
+<p align="center">
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">
+    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview.png" width="920" alt="六页实际报告预览：封面、逻辑树、方法、合成示例、模型结构和实验比较">
+  </a>
+</p>
+
+<p align="center">
+  <strong>Language-Guided Time-Series Perception: Solutions and Challenges</strong><br>
+  <sub>Chenwei Wan · SLB AI Lab Webinar · 23 页 · 2026 年 11 月 25 日</sub><br><br>
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">查看完整范例</a> ·
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/SLB-Webinar-261125.pptx?raw=true">下载 PPTX</a> ·
+  <a href="examples/v0.2.0/slb-webinar-2026-11-25/SLB-Webinar-261125.pdf">阅读 PDF</a>
+</p>
+
+预览直接从提供的 PDF 渲染。范例页保留了原始演示文稿、设计记录、参考来源和完整尺寸图片。
 
 ## 可以做什么
 
-- 围绕听众的问题组织单篇或多篇论文，明确任务、方法、证据和研究方向。
-- 保留作者论证、科学术语、数值与实验条件，区分结果、解释和提案。
-- 制作方法图、逻辑树、时序区间标注及实验比较。
-- 优先使用 Newsreader 作为标题字体，Inter 用于正文、标签、表格和参考文献，同时服从用户要求与模板约束。
-- 修改学术英语和可见标注，减少重复叙述和制作过程说明。
-- 按批注局部修改最新接受的版本，检查字体、导出、备注和媒体。
+- **🧭 让听众跟得上研究。** 围绕研究问题组织单篇或多篇论文，讲清论证与证据，保留作者原意。
+- **📐 让图表真正解释方法。** 绘制准确的方法图、时序标注和实验比较；默认以 Newsreader 标题搭配 Inter 正文与标签，同时服从你的要求和模板。
+- **✍️ 让修改延续已有成果。** 润色学术英语，按批注调整最新接受的版本，保留数值、术语和无关页面。
 
 这是一个**规范与指令型 skill**。实际 PPTX 创建、编辑、导出和渲染依赖所在 agent 环境提供的工具；包内不附带渲染引擎或演示文稿库。
 
-## 安装
+## 快速开始
 
-### 推荐：从 Release 安装
+**1. 安装 skill。** 下载审阅后的 **[v0.2.0 安装包](https://github.com/cw-wan/elegant-academic-slides-skill/releases/download/v0.2.0/design-academic-slides-v0.2.0.zip)**，解压并放到 Codex 项目中：
 
-打开 [最新 Release](https://github.com/cw-wan/elegant-academic-slides-skill/releases/latest)。v0.2.0 包含：
+```text
+your-project/.agents/skills/design-academic-slides/SKILL.md
+```
+
+**2. 带上你的研究。** 提供论文、实验结果或已有 PPT，调用 **`$design-academic-slides`** 即可开始。下面有可以直接使用的提示词。
+
+<details>
+<summary><strong>查看发布附件、来源版本与安装目录</strong></summary>
+
+仓库版本 **v0.2.0** 基于提交的 skill edition **v2026.11.25.3**。[Release 页面](https://github.com/cw-wan/elegant-academic-slides-skill/releases/latest)同时保留两份安装包：
 
 | 附件 | 用途 |
 | --- | --- |
@@ -50,7 +85,10 @@ your-project/
 
 安装 ZIP 包含 skill 与 6 张选定 SVG 图例。完整 PPT 范例和仓库说明保留在项目中。GitHub 自动生成的 Source code 压缩包包含整个仓库。
 
-### 从源码安装
+</details>
+
+<details>
+<summary><strong>让 Codex 从 GitHub 安装，或使用其他 agent</strong></summary>
 
 也可以直接对 Codex 说：
 
@@ -60,6 +98,8 @@ https://github.com/cw-wan/elegant-academic-slides-skill/tree/main/skills/design-
 ```
 
 手动克隆仓库时，复制 `skills/design-academic-slides/` 到项目的 `.agents/skills/` 下。内部调用名保持 **`$design-academic-slides`**。如果安装后尚未显示，可重启 Codex；安装位置见 [官方 skill 文档](https://learn.chatgpt.com/docs/build-skills)。其他支持 `SKILL.md` 的 agent 可按各自安装方式使用，并配备演示文稿工具。
+
+</details>
 
 ## 使用示例
 
@@ -72,6 +112,9 @@ https://github.com/cw-wan/elegant-academic-slides-skill/tree/main/skills/design-
 约 10 页。突出研究问题、方法机制和关键实验，生成可编辑的 PPTX。
 保留准确的模型名、指标和来源；没有的数据不要补造。
 ```
+
+<details>
+<summary><strong>更多提示词：按批注修改，或改进方法图与实验页</strong></summary>
 
 **根据批注修改**
 
@@ -88,9 +131,21 @@ https://github.com/cw-wan/elegant-academic-slides-skill/tree/main/skills/design-
 并检查导出后的可读性与可编辑性。
 ```
 
-## 安装包与仓库结构
+</details>
+
+## 继续探索
+
+| 从这里开始 | 你会找到 |
+| --- | --- |
+| [按版本归档的范例](examples/README.md) | 实际 PPT、预览，以及背后的设计决策 |
+| [中文使用手册](skills/design-academic-slides/references/guide.zh-CN.md) | 完整图例与具体用法 |
+| [资源与来源](docs/resources.md) | 外部 skills、论文、数据、字体和设计参考 |
+| [更新记录](CHANGELOG.md) | 每个发布版本的变化 |
 
 skill 共 18 个文件：入口、界面元数据、图标、9 份参考指南和 6 张可编辑 SVG 图例。
+
+<details>
+<summary><strong>浏览全部 skill 指南</strong></summary>
 
 | 内容 | 用途 |
 | --- | --- |
@@ -108,6 +163,11 @@ skill 共 18 个文件：入口、界面元数据、图标、9 份参考指南�
 | [仓库资源清单](docs/resources.md) | 外部 skills、论文、数据、素材和报告参考 |
 
 SELA 配置仅用于对应项目或用户明确选择的设计。外部 skills 是分别维护的参考资源，不是本 skill 的强制依赖。
+
+</details>
+
+<details>
+<summary><strong>仓库结构与安装包构建</strong></summary>
 
 ```text
 elegant-academic-slides-skill/
@@ -129,7 +189,7 @@ elegant-academic-slides-skill/
 
 [范例索引](examples/README.md) 说明了按版本归档和添加案例的方法。此前的 [v0.1.0 Release](https://github.com/cw-wan/elegant-academic-slides-skill/releases/tag/v0.1.0) 继续保留。
 
-## 构建安装包
+### 构建安装包
 
 使用 Python 3.10 或更新版本，在仓库根目录运行：
 
@@ -139,8 +199,17 @@ python scripts/package_skill.py v0.2.0
 
 脚本生成 `dist/design-academic-slides-v0.2.0.zip` 和 `dist/SHA256SUMS.txt`。若需同时保留原始提交包，可添加 `--source-archive PATH`。生成文件由 Git 忽略，作为 Release 附件分发。
 
+</details>
+
 ## 范围与许可证
 
 本 skill 聚焦学术报告和研究研讨会；输出及验证能力取决于宿主环境。本次更新已对照提供的设计记录检查，变化见[更新记录](CHANGELOG.md)。
 
 仓库当前未添加 `LICENSE` 文件。第三方来源及链接保存在[资源清单](docs/resources.md)和归档的设计原文中。
+
+---
+
+<p align="center">
+  如果它帮你讲清了研究，欢迎点个 <strong>⭐ Star</strong>，让更多人找到它。<br>
+  <sub>也欢迎按照<a href="examples/README.md">范例指南</a>，分享你的报告。</sub>
+</p>
