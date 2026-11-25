@@ -1,71 +1,28 @@
-# Scientific Content
+# Scientific content and seminar structure
 
-## Establish one authoritative source
+## Establish what each claim rests on
 
-Record the selected paper version and the provenance of each supplied result set. Check the document itself before relying on remembered numbers, dataset counts, model versions, or appendix tables. A newer result set may be valid but must not silently replace the paper version chosen for the talk.
+For a new argument, keep a private working table with four fields per slide: listener's question, proposed claim, exact source locator, and evidence the audience will see. Locate the selected paper edition, metric definition and underlying example before editing numbers or quotes. When a paper supplies a description and a separate dataset supplies the signal, credit both. Mark a proposal with a question or future-tense verb. Reserve measured quantities for completed work.
 
-Create a private evidence map when converting a paper or making substantial content changes:
+## Build a multi-paper research seminar
 
-| Slide purpose | Claim or object | Source location | Context to retain |
-| --- | --- | --- | --- |
-| Task | Input and output | Task definition or Figure 1 | What is given and predicted |
-| Representation | Operators and assumptions | Definition or equation | Applicability and exclusions |
-| Evaluation | Comparison values | Table or supplied data | Dataset, model, metric, setting |
-| Case | Evidence and prediction | Figure or trace | Channels, intervals, annotations |
-| Takeaway | Interpretation | Result plus analysis | Scope and remaining uncertainty |
+| Audience question | Composition decision |
+|---|---|
+| What would I look for in this situation? | Open with a real observation, a complete input and a question an audience member can answer. |
+| How is this task situated? | Define the input, output and unit of evaluation. Compare with familiar tasks only along the dimensions the talk needs. |
+| Where is the difficulty? | Show competing interpretations on the same evidence. Identify the phrase or observation that distinguishes them. |
+| How does the first approach help? | Introduce the paper and its authors, show its representation and method, then show a result and an inspectable case. |
+| Why do we need another approach? | Use a measured limitation or a change of operating conditions as the transition. Introduce the second paper and its authors, explain its mechanism and test it on its own terms. |
+| What can we now ask? | Introduce the subjects of the upcoming research pages. On each page give the question, proposed plan, relevant prior work and evidence that would test it. |
 
-Do not expose this production table on a slide unless requested. Use it to prevent unsupported compression.
+Read the titles in sequence. Each transition should have a reason that survives removal of the method names. A single-paper talk may follow just one of these paths. When incorporating supporting material into the main talk, place it at the first claim that needs it. Include the theory just before its operator, the ablation near the result it qualifies, and the demo after the audience knows what to observe.
 
-## Explain a research gap concretely
+For the SLB seminar, budget three pages for the closing section **including its divider**. Under its heading the divider previews the two pages in speaking order: real-time multichannel detection with synthetic training data, then reasoning, prediction and decision support from detected events. Use a short line per distinct topic when listeners need that orientation. Each line must point to an actual page or subsection. The first research page starts with the deployment gap and proposes a path to low-latency multichannel detection. The second moves from localized events to reasoning, prediction and decision support. Put references after this section. For a different talk, follow its own duration and page budget.
 
-Identify the source paper's actual difficulties. Connect each difficulty to a visible failure mode or requirement. For example, alignment, multichannel composition, and inspectable evidence are useful categories for the SELA task; they are not a mandatory three-part framework for every project.
+## Make a research direction testable
 
-State inputs and outputs before adding architectural detail. For a proposed pipeline, distinguish supplied inputs from assumptions, optional resources, and future components. Do not introduce a domain schema, database, gold labels, or annotation process that the actual task does not provide.
+Name the present capability and its measured limitation. Put the proposed sequence near the top of the slide so the listener sees the plan before encountering related work. Compare existing methods by what they learn, what they can condition on, and what supervision the proposal requires. An example earns its place when it illustrates that specific distinction. Identify the evidence needed at each level of a roadmap. A plausible explanation, a forecast assessed on future observations, and a decision evaluated against operational costs require different tests.
 
-Keep exact implementation identities where they matter: the actual encoder, reranker, backbone, or classifier can be more informative than a generic “AI module.” Do not guess missing names.
+## Preserve scientific scope
 
-## Handle definitions and theoretical lineage
-
-Present an introduced representation with a complete concrete example. Put the source description beside its structured form so the audience can compare them.
-
-When borrowing a theory, show the relationship at the right level:
-
-- Name the theory correctly and cite an authoritative source.
-- Map the paper's operators to the applicable theoretical relations.
-- State which assumptions narrow the relationship.
-- Mark omitted relations or unsupported cases explicitly.
-- Distinguish inspiration, specialization, and mathematical equivalence.
-
-Use a historical portrait or book/paper image only when requested or when it helps orient the audience. Verify identity, source, and reuse conditions. A photograph communicates historical context; it does not substitute for the mapping or a citation.
-
-## Quote faithfully
-
-Use a visibly quoted block for verbatim source text. Preserve the complete wording of the selected example when the user asks for it in full. If the space is insufficient, recompose the slide or divide the material with permission when slide count is fixed; do not silently truncate the example.
-
-Use ellipses only when the omission is intentional, marked, and harmless to the explanation. Label paraphrases as descriptions rather than presenting them as exact quotations. Preserve emphasis that carries semantic information, such as primitive phrases and temporal connectives.
-
-## Separate kinds of evidence
-
-Distinguish:
-
-- A representation that is syntactically valid.
-- A representation that preserves the intended meaning.
-- A grounding that agrees with the observed evidence.
-- A computation that follows the specified operators.
-- A final prediction that matches the evaluation target.
-
-Do not describe a successful compiler check as semantic validation. Do not describe an inspectable intermediate structure as proof of faithfulness. Explain what a symbolic engine actually checks and which judgments remain with a learned model or human.
-
-## Write useful takeaways
-
-Derive each takeaway from a result, mechanism, or demonstrated limitation. Prefer a concise answer to “What did we learn?” over a list of module names or a promotional slogan.
-
-Examples of appropriately qualified takeaways:
-
-- An ablation supports the value of structured composition under the reported conditions.
-- A case demonstrates where explicit temporal structure helps identify localization errors.
-- A parsing benchmark shows that well-formed output and semantic fidelity require separate evaluation.
-
-Do not turn one successful case into a universal guarantee, a confidence score into a calibrated probability, or a performance difference into a causal explanation unsupported by the experiment.
-
-Keep source URLs and full citations in notes or a readable references slide as appropriate. Keep a short visible citation when theoretical attribution, an external photograph, or a direct quotation needs it. Do not pack tiny references into the main reading path.
+Use the input and output the task actually supplies. Ground model names, training supervision and temporal assumptions in the primary source. Keep compilation success, fidelity to language, agreement with a trace and downstream performance distinct. If drawing on a general theory, show the applicable mapping and its assumptions. An example can show how a mechanism works. A benchmark supplies the comparison across examples.

@@ -1,71 +1,29 @@
-# Visual Design
+# Visual design
 
-## Use a coherent academic composition
+## Compose for a shared screen
 
-Start with white or a very light neutral background, dark text, and a restrained accent palette unless the user has selected another style. Preserve a supplied theme. Treat a warm poster palette, a particular font family, and ornamental cover lettering as project choices, not universal rules.
+Take the accepted deck's cover, method page and densest results page as three typographic specimens. Measure their actual title, prose, data-label and source styles. Keep a repeatable hierarchy across the deck and its drawings. Determine scale from a presentation-size render. Shorten the heading or reclaim space before reducing evidence. Check a projected or screen-share view as well as a full-resolution view.
 
-Use alignment, proximity, whitespace, short labels, and consistent line weight to establish hierarchy. Avoid a collection of dashboard cards or a large box containing most of the slide's text. A container should indicate a meaningful scope or shared component.
+Use **Newsreader** for talk, section and slide titles. Set body copy, speaker and author lines, tables, citations, axis ticks, legends and diagram labels in **Inter**. Apply the pairing in the PowerPoint theme, native text, and editable figure sources. Preserve the approved weights; the SELA design uses Newsreader Medium for headings and Inter Regular, Medium or SemiBold according to emphasis. Follow an explicit typeface request or a required event template when supplied.
 
-Allocate space by explanatory complexity. A seven-channel case deserves more area than a simple three-node schematic. Keep small conceptual diagrams compact and enlarge dense figures until their evidence is legible.
+Load the selected font files in the authoring and rendering environments. Check the face and weight actually rendered, title wrapping and the longest table header. Keep diagram text editable in the source SVG when an embedded derivative needs outlines. A local font warning is a delivery issue: follow [the save-workflow check](revision-and-delivery.md) before making a compatibility copy.
 
-## Increase density without increasing reading burden
+## Make the cover introduce the work
 
-Use this order when a slide feels empty or crowded:
+Keep the seminar title, speaker and approved affiliation readable. A single scientific motif can pose the first question. For a waveform, keep neighboring cycles for context, bracket the selected event, and align a complete short query with it. Repeat a small set of colors across the phrases and their corresponding signal components. Place each paper's full author list and publication identity on its own introduction.
 
-1. Remove repeated headings, duplicated legends, and uninformative sentences.
-2. Tighten unused internal padding and oversized title regions.
-3. Align related content and move captions next to the objects they explain.
-4. Enlarge the main figure, axes, and example.
-5. Combine compatible views or redistribute the story across permitted slides.
-6. Revisit wording before reducing type size.
+## Arrange the page by evidence
 
-Preserve whitespace around boundaries between ideas. Do not maximize occupied area as a numerical objective. A high-density academic poster and an oral talk have different reading conditions.
+Give the main evidence the largest useful area. Use alignment and space to group related things. A light enclosing shape can identify a shared module. Independent headings establish independent conditions. Put descriptive math, units or a legend where the reader uses them. Examples and labels need enough room at their final insertion size.
 
-## Typography
+Use restrained color with a stable meaning. Give nested groups distinct borders or sufficient contrast. Pair color with text, position, line style or a marker. Preserve image aspect ratio and original artwork. Use original mark files as supplied. If an institutional mark repeats, allocate a quiet band independent of data, citations and page numbers. Test the longest citation, a two-digit page and each section-opening layout. For this webinar, the cover mark is top left, and the smaller mark on subsequent pages sits immediately left of the page number.
 
-Keep a stable scale for headings, body text, figure labels, and secondary notes. Match repeated elements throughout the deck, including authors, affiliations, page numbers, and axis labels. Inspect line wrapping, superscripts, math symbols, and multilingual characters in the final render.
+## References on the page
 
-Use descriptive subject headings for setup slides. Use a supported finding as a heading when the slide establishes that finding. Remove generic headings that consume space without helping the audience, particularly when enlarging a self-explanatory case figure.
+Use a consistent short form, such as author, year and table or figure number. Credit a dataset and an interpretation separately when their provenance differs. Put full references and durable links in the notes or references slide. Keep design credits in the design record unless a visible image needs attribution. On a paper introduction, preserve author order, venue and publication track.
 
-Keep exact technical terms and model names. Use bold or color sparingly to guide reading. Avoid decorative font changes within ordinary explanatory text.
+## Recover a source illustration and compose a paper opener
 
-## Optional calligraphic cover
+When a reviewer points to an existing illustration, locate its original media in the source deck. Crop using the native pixels and transparency. Compare the silhouette, small identifying features, and full palette at the size shown on the slide. A vector diagram may contain an original raster illustration. Keep the illustration's colors and alpha when assembling the SVG; credit it at the point of use.
 
-Apply only when requested or accepted as the cover direction:
-
-1. Confirm the exact selected artwork variant from the conversation or file selection.
-2. Keep a transparent PNG or appropriate vector artwork on its own layer.
-3. Preserve its aspect ratio and place it behind the upright subtitle text.
-4. Use a light, coordinated color or native image transparency so the subtitle stays legible.
-5. Adjust subtitle, authors, affiliations, and logos as a composition; preserve their internal hierarchy.
-6. Inspect ascenders, descenders, flourishes, author lines, logo clearances, and all canvas edges.
-
-Decide explicitly whether the script replaces a duplicate upright main title. Do not accidentally show the same title twice. Keep the subtitle, author list, and affiliations editable. Do not flatten the entire cover to an image to achieve a layered effect.
-
-Preserve existing image transparency. Do not re-generate the selected artwork merely to place it. Use the environment's permitted image-editing workflow if an actual bitmap alteration is needed.
-
-## Images and logos
-
-Use the original asset where fidelity matters. Preserve aspect ratio:
-
-`scale = min(available_width / source_width, available_height / source_height)`
-
-Render at `source_width * scale` by `source_height * scale` and center it within the intended area. Use a crop only when it does not remove evidence and the task permits it. Never stretch an entire scientific figure horizontally to fill the slide.
-
-Retain required channels, legends, axes, and annotations. Recompose a complex source figure into separate panels only when each panel retains its scientific context. Prefer native labels or the original vector figure over low-resolution screenshots.
-
-Use recognizable document, data, or schema icons when they clarify an input or intermediate object. Prefer licensed vector assets or editable symbols consistent with the rest of the figure. Keep the icon subordinate to its meaning.
-
-Use original logos; do not redraw, recolor, or distort them casually. Record external artwork provenance and licensing. Do not assume public availability grants redistribution rights.
-
-## Color and state
-
-Assign colors to stable semantic roles, such as operators, evidence types, method families, or active branches. Preserve that meaning across slides.
-
-Differentiate nested modules with sufficient background contrast, a visible border, or whitespace. Avoid placing similarly filled child boxes flush inside a same-color parent box.
-
-Pair color with text, line style, or position. Inspect whether a muted branch is still readable, and whether an intentionally light chart series can be distinguished on a projector. Do not rely on red/green alone.
-
-## Final composition check
-
-At normal presentation scale, locate the main point, then follow the intended reading order. At full size, inspect small labels and intersections. Check that removed headings or shortened text boxes did not leave unexplained empty panels, oversized quotation boxes, or stray borders below the content.
+When the approved opener layers a wordmark under a title, place the subdued artwork behind a dark native title. In the SELA opener it overlaps the first title line. Keep author names, venue and other reading areas clear. Inspect the foreground strokes at normal size in the PPTX, review copy and requested PDF. Test intended overlaps explicitly when running collision checks.

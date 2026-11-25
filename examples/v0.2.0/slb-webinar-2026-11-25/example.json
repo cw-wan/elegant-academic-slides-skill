@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "title": "Language-Guided Time-Series Perception: Solutions and Challenges",
+  "presenter": "Chenwei Wan",
+  "event": "SLB AI Lab Webinar",
+  "date": "2026-11-25",
+  "language": "en",
+  "archive_release": "v0.2.0",
+  "skill": {
+    "name": "design-academic-slides",
+    "repository_release": "v0.2.0",
+    "source_edition": "v2026.11.25.3",
+    "source_archive": "design-academic-slides_v2026.11.25.3.zip",
+    "source_archive_sha256": "0b1735115f9d34a5fc359455b794a9eb93b9fea44f7f9f099198f2f0a898f053",
+    "association": "User-supplied example and skill package archived together; no original generation transcript is included."
+  },
+  "design_record": {
+    "path": "Seminar_Writing_Design_and_Sources_v10.md",
+    "document_revision": "v10",
+    "preserved_as_supplied": true
+  },
+  "files": [
+    {
+      "path": "SLB-Webinar-261125.pptx",
+      "bytes": 15362821,
+      "sha256": "a5bfcd28095063a7acd61b3de8156628d2db575d36da4894c17bb7a362e26ac4"
+    },
+    {
+      "path": "SLB-Webinar-261125.pdf",
+      "bytes": 3467009,
+      "sha256": "2d0aa4f1f6507266c240a61f44f03a21e7676aaf32f31e31066ea5c376db4a53"
+    },
+    {
+      "path": "Seminar_Writing_Design_and_Sources_v10.md",
+      "bytes": 15139,
+      "sha256": "995a462917a3606e0f7dfcbb7320d01fd9b3e054ee3f5c151bd591d2b4767a54"
+    }
+  ],
+  "previews": [
+    {
+      "path": "previews/cover.png",
+      "bytes": 94816,
+      "sha256": "2e81d5658afcd494e7e489d5265f9e968292460c8e8304cc8901cb04ce2c3af5",
+      "pdf_pages": [
+        1
+      ]
+    },
+    {
+      "path": "previews/overview.png",
+      "bytes": 637423,
+      "sha256": "150a782a8a3e8a78897424b25e68ab16793eb5c151c5e6abfac8c939c85dac5b",
+      "pdf_pages": [
+        1,
+        7,
+        9,
+        14,
+        15,
+        18
+      ]
+    },
+    {
+      "path": "previews/event-logic-tree.png",
+      "bytes": 135405,
+      "sha256": "f9745955269c89662aff00ec1dc712247ffc4a6c84b9af352e45d99fce55ccc0",
+      "pdf_pages": [
+        7
+      ]
+    },
+    {
+      "path": "previews/sela-method.png",
+      "bytes": 117857,
+      "sha256": "d00f76f915b33cc7f30e1529fb23163c4689dd71d9334b661c8e8ac302abc2f3",
+      "pdf_pages": [
+        9
+      ]
+    },
+    {
+      "path": "previews/synthesis-variation.png",
+      "bytes": 142374,
+      "sha256": "fdc602564499273ab9f40495a8cced4865a38583ea69c376d597449ea216f206",
+      "pdf_pages": [
+        14
+      ]
+    },
+    {
+      "path": "previews/accuracy-latency.png",
+      "bytes": 77995,
+      "sha256": "eba0a43d93b07fddd185b96555390f354b044d173b07bf5863f3a88ff50123a5",
+      "pdf_pages": [
+        18
+      ]
+    }
+  ],
+  "inspection": {
+    "pdf_pages": 23,
+    "pptx_slides": 23,
+    "speaker_notes": 23,
+    "native_tables": 3,
+    "embedded_mp4_files": 3,
+    "embedded_font_files": 5,
+    "svg_resources": 17,
+    "media_playback_tested": false,
+    "design_record_svg_count": 18,
+    "svg_count_note": "The supplied design record reports 18 SVGs. The delivered PPTX contains 17 SVG resources; slide 6 uses a PNG for its combined figure."
+  }
+}

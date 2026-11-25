@@ -1,69 +1,22 @@
-# Experimental Evidence
+# Experimental evidence
 
-## Build a comparison contract
+Before plotting, record dataset, metric, denominator, threshold, unit, model or backbone, supervision, averaging, and uncertainty statistic for each experimental condition. Leave missing observations explicitly missing. Recompute any difference from the source values and match the precision of the published table.
 
-Before plotting, preserve the dataset, target, metric, scale, threshold, averaging rule, backbone, supervision setting, and uncertainty information for each value. Label missing results as missing; never draw them as zero.
+| Comparison | Compose the view | Check |
+|---|---|---|
+| Localization at two thresholds | Two aligned dot-and-whisker panels. Keep one row per method, the same axis limits, and exact values beside the marks. | Define the threshold and the error statistic. Use whiskers only when the source reports variability. [Example](../assets/examples/localization.svg) |
+| Several exact scores | Native editable table with readable headers. When values have comparable definitions and direction, use a shared, labeled heat scale. | Print every value. Keep the numeric range explicit, include all comparable cells, and explain conditional denominators. |
+| Different measures on the same methods | Align method rows across a small set of columns. Give comparable accuracy scores a common scale. Give time its own unit and scale. Align numbers on their decimal positions or right edges. | Test the chart with its color removed. Verify that readers can identify the metric, the method and the value. [Example](../assets/examples/accuracy-latency.svg) |
+| An ablation | Align full and ablated models within the same dataset, metric and backbone. Name the removed component. | Check that a changed training or inference regime is visible where it affects the result. |
+| Temporal localization errors | Use reference and prediction lanes on aligned signals, including adjacent plausible regions. | Check start, end, class, source and coordinate convention for every interval. |
+| Research agenda or related work | Use a native text table when row and column relationships matter. Describe what each source actually controls or measures. | Give the proposal its own evidence requirements. Preserve speaker-readable cells and linked references. |
 
-Keep percentages and unit-interval scores consistent. Express a subtraction of percentages as percentage points, and distinguish it from relative percentage improvement. Recalculate any displayed delta from the underlying values.
+A reported percentage-point difference is the subtraction of two scores on the same percentage scale. A relative change requires stating its baseline. A conditional quality score needs its denominator on the slide. Distinguish compilation pass rate from the structural or semantic quality measured among passing parses. Use source-defined terminology and avoid an invented overall ranking.
 
-If the user asks for CNN, Transformer, or additional time-series foundation model baselines, locate verified results in the selected sources. Include available model families in a compact view. If results for a requested baseline do not exist, identify the gap; do not invent a bar or imply a new experiment was run.
+A speed result needs the unit and evaluation setting. If a backend difference dominates interpretation, make it visible by the result. Otherwise retain the configurations in notes and avoid generalizing a reported runtime to all deployments. Keep numerical chart data editable when available. A source SVG serves vector editing, a chart workbook serves numerical editing, and a native table serves cell editing. Check each property promised to the user.
 
-Report an unavailable requested experiment in the handoff or private change checklist. Put it on the slide only when it is itself relevant to the scientific discussion. Avoid filling a polished result slide with production-status notes or empty placeholder rows.
+For a demonstration, obtain the actual project media. Keep the original video or animation and its natural aspect ratio. Check that the correct file is embedded, that its poster frame is representative, and that playback works in the intended presentation environment when accessible. Record the difference between a media-integrity check and an observed playback test.
 
-## Choose the visual for the comparison
+## Set the geometry of a native comparison table
 
-| Question | Useful view | Constraint |
-| --- | --- | --- |
-| Which model performs better? | Grouped bars or dot plot | Shared metric and scale |
-| How do two thresholds compare? | Paired or overlapping bars | Same metric definition except threshold |
-| What changes without a component? | Paired bars or paired dots | Same evaluation configuration |
-| Where does a system fail? | Timeline plus predictions and evidence | Preserve time scale and annotations |
-| How do several quality dimensions differ? | Native table, optionally with heatmap | Keep exact labels and denominators |
-| How much does performance vary? | Error bars or interval plot | Use only uncertainty actually reported |
-
-Use a table when it is clearer than a crowded chart. Do not force every result into a bar chart. Keep a consistent model order across comparable panels; group families visibly when the order has scientific meaning.
-
-## Overlap two results without hiding their meaning
-
-Use light and dark bars at the same category position to reduce duplicated panels when both values share a meaningful numerical scale. This is an overlay, not a stack: neither bar should start at the other's endpoint.
-
-For genuinely nested thresholds, such as a looser and stricter localization threshold under the same protocol:
-
-1. Verify the actual values and evaluation definitions; do not assume nesting from the labels alone.
-2. Draw the looser-threshold value as a wider, lighter bar behind.
-3. Draw the stricter-threshold value as a narrower, darker bar in front.
-4. Start both at zero and keep their category centers aligned.
-5. Label both metric definitions in the legend and retain exact values in editable data.
-6. Explain a visible discrepancy if the expected ordering does not hold; use grouped bars when nesting would mislead.
-
-For different metrics such as F1 and F0.5, do not describe the bars as a stricter/looser pair or a guaranteed subset. F0.5 changes the precision-recall weighting, and its ordering relative to F1 can vary. If the user explicitly requests an overlay, label both metrics exactly, ensure neither is concealed, use clearly different widths, and keep the same zero baseline. Prefer paired bars or dots if crossing values make the overlay hard to read.
-
-Use light/dark shades within a model's color only when contrast remains adequate. A gray/light series is acceptable if the legend and labels remove ambiguity. Use labels, width, or line cues in addition to color.
-
-Avoid stacked totals, misleading occlusion, incompatible scales, hidden axes, and bar-chart truncation. Do not compare a localization F1 in one dataset directly with a coverage F-score in another as though they were the same quantity.
-
-## Intermediate parsing and reasoning quality
-
-Include a stage-specific benchmark when a system's contribution depends on structured parsing or grounding and evidence is available. Distinguish at least the reported dimensions rather than compressing them into one invented score.
-
-Possible source-defined dimensions include compilation/pass rate, primitive validity, structural fidelity, semantic alignment, and coverage. Use the paper's exact definitions and denominators. A score among valid parses must not be presented as a score over all attempted parses.
-
-Keep compile success and downstream quality visibly separate. When one model has higher pass rate and another has better fidelity conditional on passing, show the tradeoff. Do not choose a universal “best” model by an unstated aggregation rule.
-
-Avoid a redundant setup slide when one benchmark slide can carry the title, short explanation, and data. If requested, transfer the useful heading and subtitle to the results page and remove the duplicate page.
-
-## Ablations and cases
-
-Show each full/ablated comparison within its own dataset and metric. State what the ablation removes or replaces. Keep the backbone and evaluation regime fixed or explain the difference.
-
-Use a case study to expose the mechanism: input evidence, reference annotation, prediction, and relevant intermediate structure. Preserve all required channels and the same time alignment across panels. Clearly label a selected case; do not present it as representative of the full distribution without evidence.
-
-For animations, preserve the actual media and test playback when possible. Use a poster frame or static fallback only with a clear delivery note. A GIF imported as its first frame is not an animated result.
-
-## Preserve editable chart data
-
-Retain native charts, series names, category labels, and the embedded workbook when present. Preserve workbook formulas and relationships when editing an existing deck.
-
-Treat missing workbooks after an import/export round trip as a concrete failure to investigate. Recover the original corresponding package parts only after verifying their identity and relationships. Do not blindly copy chart parts by hard-coded slide numbers or silently replace a formula-backed workbook with literal values.
-
-Use the active presentation backend's documented chart API and validators. A chart image may look right while its underlying editable data is missing; check both appearance and structure.
+Give comparable columns equal widths, matching horizontal padding, consistent numeric alignment and the precision used in the source. Wrap long headers on meaningful word boundaries. Choose the row height after laying out the longest header; a compact matrix can use the same height for both header and data rows. Size a long method-label column to its content when necessary. In the SELA parsing matrix all six columns, including the model names, share one width, and every row has the same height. Verify the widths and heights in the native cells, then inspect a render for clipped text. Preserve the labeled heat scale, exact values and denominator during geometry edits.

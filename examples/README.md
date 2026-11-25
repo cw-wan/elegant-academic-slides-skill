@@ -1,29 +1,25 @@
-# Examples / 范例
+# Examples
 
-[Repository home / 返回仓库说明](../README.md) · [中文说明](../README.zh-CN.md)
+[Repository home](../README.md) | [Chinese README](../README.zh-CN.md) | [Resources](../docs/resources.md)
 
-This directory will collect real presentation examples made with `design-academic-slides`. **No actual examples have been published yet.** Examples are maintained in the full repository and are not included in the installable skill Release ZIP.
+Examples are archived by **repository skill release**, then by example name. Each archive keeps the supplied presentation, its design record, and its associated source skill edition together. Full decks stay here; installation ZIPs contain the skill package and selected SVG figures.
 
-Each future example should have its own `kebab-case` subdirectory and a README describing:
+| Release | Associated source edition | Example |
+| --- | --- | --- |
+| [v0.2.0](v0.2.0/README.md) | v2026.11.25.3 | [Language-Guided Time-Series Perception: Solutions and Challenges](v0.2.0/slb-webinar-2026-11-25/README.md), 23 slides, English, PPTX + PDF |
 
-- **Task:** the presentation goal, audience, and relevant constraints.
-- **Inputs:** the paper, results, existing deck, or comments used, with links to available files or sources.
-- **Outputs:** the resulting presentation and any accompanying files.
-- **Preview:** images or another view of the actual output.
-- **Usage:** the prompt, available tools, and steps needed to use or reproduce the example.
+[![Six-slide preview of the SLB seminar](v0.2.0/slb-webinar-2026-11-25/previews/overview.png)](v0.2.0/slb-webinar-2026-11-25/README.md)
 
-Only list inputs, outputs, and previews that are actually available.
+The [v0.1.0 release](https://github.com/cw-wan/elegant-academic-slides-skill/releases/tag/v0.1.0) predates the first full presentation example; no placeholder example folder is created for it.
 
----
+## Add an example
 
-本目录将持续收录使用 `design-academic-slides` 制作的实际演示文稿范例。**目前暂无已发布的实际范例。** 范例保留在完整仓库中，不包含在可安装的 skill Release ZIP 中。
+Use `examples/<release>/<kebab-case-name>/`. Each example README should record:
 
-后续每个范例使用独立的 `kebab-case` 子目录，并在 README 中说明：
+- The task, audience, date, and language.
+- The associated release and source skill edition, using known provenance.
+- Available inputs, source links, and the design record.
+- Actual PPTX/PDF outputs and previews rendered from them.
+- Supplied prompts or reproduction steps, and checks actually performed.
 
-- **任务：** 演示目标、受众与相关约束。
-- **输入：** 使用的论文、实验结果、已有 PPT 或批注，以及可访问的文件或来源链接。
-- **输出：** 实际生成的演示文稿与附属文件。
-- **预览：** 实际输出的图片或其他可查看形式。
-- **使用方式：** 提示词、所需工具，以及使用或复现步骤。
-
-仅列出实际可提供的输入、输出和预览。
+Preserve published version folders as historical records. Add a new version folder when updating an example for a later skill release.

@@ -4,15 +4,25 @@ import argparse
 import hashlib
 from pathlib import Path
 import re
+import shutil
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("version", help="Release version, for example v0.1.0")
+    parser.add_argument("--source-archive", type=Path, help="Also preserve an original supplied skill ZIP as a separate release asset")
     args = parser.parse_args()
     if not re.fullmatch(r"v\d+\.\d+\.\d+(?:-[a-zA-Z0-9.-]+)?", args.version):
         parser.error("Use a version such as v0.1.0 or v0.2.0-beta.1")
+    if args.source_archive:
+        if not args.source_archive.is_file() or args.source_archive.suffix.lower() != ".zip":
+            parser.error("--source-archive must name an existing ZIP file")
+        if args.source_archive.name == f"design-academic-slides-{args.version}.zip":
+            parser.error("The source archive must have a distinct name from the reviewed installation package")
+        with ZipFile(args.source_archive) as supplied:
+            if supplied.testzip() is not None:
+                parser.error("The source archive failed its integrity check")
 
     root = Path(__file__).resolve().parents[1]
     source = root / "skills" / "design-academic-slides"
@@ -47,11 +57,18 @@ def main():
             if bundle.read(name) != path.read_bytes():
                 raise RuntimeError(f"Archive content differs from source: {name}")
 
-    digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+    assets = [archive]
+    if args.source_archive:
+        preserved = output / args.source_archive.name
+        if args.source_archive.resolve() != preserved.resolve():
+            shutil.copyfile(args.source_archive, preserved)
+        assets.append(preserved)
+    digests = [(hashlib.sha256(asset.read_bytes()).hexdigest(), asset.name) for asset in assets]
     checksum = output / "SHA256SUMS.txt"
-    checksum.write_text(f"{digest}  {archive.name}\n", encoding="utf-8")
+    checksum.write_text("".join(f"{digest}  {name}\n" for digest, name in digests), encoding="utf-8")
     print(f"Built {archive.name} ({len(files)} files)")
-    print(f"SHA256: {digest}")
+    for digest, name in digests:
+        print(f"SHA256: {digest}  {name}")
     print(f"Output: {output}")
 
 

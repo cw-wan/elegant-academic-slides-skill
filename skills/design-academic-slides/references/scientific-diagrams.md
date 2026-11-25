@@ -1,79 +1,42 @@
-# Scientific Diagrams
+# Scientific diagrams
 
-## Show objects and operations
+## Draw the vector first
 
-Organize a method figure around identifiable data objects and their transformations. Use compact labels, short annotations, and visible branches. Avoid replacing architecture with paragraphs inside large rectangles.
+1. Write the diagram as a set of labeled dependencies. Identify the input objects, learned components, deterministic computation, intermediates, output, and any real feedback edge.
+2. Inspect the scientific reference at its intended scale. Take its reading order, grouping, use of token strips, evidence windows or axes. Use only components that exist in the selected method.
+3. Build an editable SVG or a native vector diagram. Use short stage names, miniature data objects and quiet connectors. For a text-and-signal method, give the two inputs separate lanes until the stated fusion point. A two-line label can name a module and its actual model. Reserve a group boundary for an actual shared or repeated scope.
+4. Render the vector by itself at the width it will occupy on the slide. Follow an entire input-to-output path with a finger. Check arrow destinations, nesting, label collisions, text size and color contrast. Place the approved visual in the slide at its original aspect ratio.
+5. Keep the text-bearing SVG source. If Office needs a fallback, embed the vector with a matching raster preview. If a renderer substitutes fonts, outline a derivative and keep the original text editable in the delivered sources. Validate the figure again in the exported slide.
 
-When the user provides a conference-paper figure as a style reference, inspect its grouping, typography, line weights, arrow conventions, object density, and reading order before drawing. Carry those visual principles into the new figure while preserving the new system's actual semantics. Do not substitute a generic flowchart template for an explicitly requested academic figure style.
+In a query-based architecture, show what queries attend to and what the decoder predicts. The [GroundingMOMENT architecture](../assets/examples/architecture.svg) shows separate signal and text encoders, event and primitive queries, a shared decoder and the temporal spans it returns. In an agent system, distinguish the analyst's semantic review from compiler feedback. Give an inspector an actual trace and show the evidence and interval it produces.
 
-Before drawing, list:
+## Make a tree agree with the case
 
-- External inputs and final outputs.
-- Learned components, deterministic tools, and human actions if any.
-- Intermediate objects and their state changes.
-- Forward dependencies and feedback paths.
-- Model or algorithm identities explicitly established by the source.
+Use left-to-right reading when it matches the accepted tree design. Place terminal leaves on a common right-hand column, including leaves attached directly to the root. Consistent leaf widths align both edges. Preserve internal depth, parentage and branch order. Route branches with soft curves, leave space between adjacent leaves, and check that no curve appears to terminate at another branch's label.
 
-Use containment only for an actual scope: a shared encoder, a repeated agent population, a trainable module, or a runtime boundary. Do not use enclosure merely to fill space.
+Keep the primitive's channel in its label. Distinguish the schema from a grounded instance. Give active leaves corresponding segment labels on the signal. Mute an unused alternative while keeping it readable. Check the semantics of OR before drawing the active children. In a duration-flexibility example, keep the event relations fixed while varying the durations in explicitly schematic traces.
 
-## Render a system completely
+## Show an interval in context
 
-Show the output explicitly, such as predicted intervals and classes, a ranked candidate list, or a structured query. A pipeline that ends at an internal module leaves the task unexplained.
+| Step | Acceptance test |
+|---|---|
+| Select a case | The full event is present and its start and end both lie on screen. When illustrating ambiguity, include a plausible earlier or later candidate for comparison. |
+| Draw the overview | Show enough of the measured record to interpret the event and, when relevant, compare candidates. Align channels on one time or sample axis. Label units, sample index, and channel identity where known. |
+| Add a detail view | Locate the enlarged window in the overview. Preserve the time coordinates, channel order and signal values. |
+| Encode containment | Use separate parent and child interval lanes on the same scale. Make a shared endpoint visible. Keep fills translucent enough to follow the trace. |
+| Map language and structure | Pair a short on-trace primitive label with its matching phrase and tree leaf. Label observed segments and leave unsupported alternatives inactive. |
+| State the evidence status | Distinguish expert annotation, model prediction and editorial interpretation. Use an approximation mark for a breakpoint inferred by eye. Carry its provenance in the notes. |
 
-Label feedback by its information content: compilation status, error message, coherence score, evidence interval, or review request. Separate compilation feedback from comparison with the original language description. Draw arrow direction and termination carefully so a viewer can identify which component acts on feedback.
+The [nested event example](../assets/examples/nested-intervals.svg) shows both a complete pressure record and a magnified test. Read the outer annotated interval first, then follow the Buildup bar and its pressure and volume primitives. Check small interval labels at presentation scale before using a crop or extension.
 
-Distinguish a schema from an instance and a proposed query from an executed or validated query. Do not imply access to resources that have not been built or supplied.
+## Separate event length from the proportions of its phases
 
-## Represent multiple agents honestly
+In a [paired duration example](../assets/examples/temporal-elasticity.svg), use the same horizontal distance per time unit. Align the starts within each local panel and give the longer event more width. Label each complete span below its endpoints. Above the pressure trace, name the relative lengths of the phases. A short event can spend most of its time rising and a long event most of its time steady. A second channel required to stay stable must extend to each event's own endpoint.
 
-Use repeated or partially overlapping avatars to indicate a population when multiplicity matters. Add a short label such as “one inspector per class” where it explains the actual division of work. Keep dataset-specific class names in case studies unless they are needed in the overview.
+Check the example with the labels hidden: compare the total widths, then the fraction of each width taken up by the rise. Restore the labels and check that both readings match. An axis normalized to 0–100% can answer a question about phase fractions alone; an absolute-duration comparison needs a common time scale. Keep expert boundaries on measured traces distinct from invented durations in a schematic.
 
-Assign consistent avatars to roles. A character used as an inspector in the case study should retain that role in the overview. Give a different analyst role a distinct character. Keep the source, license, atlas, and crop coordinates with the asset manifest when using sprites.
+## Show the variation that supplies training supervision
 
-Show agent-tool interactions rather than anthropomorphic decoration alone. Keep deterministic engine outputs visually distinct from the agent's interpretation of them.
+Pair one fixed event description and ordered primitive template with two schematic waveforms. Share time and amplitude scales across draws. Mark phase durations horizontally at their boundaries and amplitude vertically from a defined baseline. State the units, normalization stage and status of example values in the figure or its accompanying explanation. A changed parameter should produce a visible change along its own axis.
 
-## Trees and structured representations
-
-Choose a consistent reading direction. Prefer a horizontal, left-to-right tree when the case study uses that convention or it makes alignment with the source description clearer.
-
-- Put the root at the left and successive depths to the right.
-- Keep all nodes in a comparable tree the same dimensions when requested; otherwise at least keep equivalent node roles dimensionally consistent.
-- Fit the longest label by sizing the node system, wrapping, or using explained abbreviations. Do not shrink isolated nodes unpredictably.
-- Use orderly branch spacing and clean connectors.
-- Keep operator labels, leaf labels, and channel assignments faithful to the source.
-- Make each edge's endpoint and branch membership unambiguous.
-
-Use this state convention when no established project notation conflicts:
-
-| State | Border | Interior | Additional cue |
-| --- | --- | --- | --- |
-| Schema operator | Solid semantic outline | White or unfilled | Operator label |
-| Schema primitive | Dashed semantic outline | White or unfilled | Primitive/channel label |
-| Instantiated active node | Dark semantic outline | Pale matching fill | Evidence or score if relevant |
-| Inactive alternative | Muted or dashed outline | Neutral/light fill | “Inactive” or another explicit cue |
-
-Keep instantiated nodes visually different from unfilled schema nodes. Do not use a heavy saturated fill where a dark border and light interior communicate state more clearly.
-
-For OR, depict the alternatives actually supported by the instance. If the source example activates one branch, show the other branch as inactive. Do not make every branch active for visual symmetry. Do not turn inclusive OR into exclusive OR: if the source permits several active children, preserve that behavior.
-
-## Pair text with structure
-
-Place the complete selected description in a compact quotation treatment beside its tree. Align corresponding phrases and leaves through restrained shared colors or concise labels. Retain enough text for a viewer to inspect whether the tree reflects the description.
-
-Size the quotation block to its text. Avoid an oversized empty lower region, protruding decorative border, or unnecessary “tail.” Use the same tree notation in the explanatory slide and the detailed case.
-
-## Explain temporal flexibility
-
-To illustrate relative duration flexibility, change the relative lengths of at least two subevents while preserving the stated temporal relations. For a rise followed by a steady interval, contrast a shorter rise/longer steady interval with a longer rise/shorter steady interval.
-
-Keep the demonstration schematic unless drawn from actual data, and label it accordingly. Do not distort a measured signal to manufacture a result. Make the invariant topology and changing durations visually distinguishable.
-
-## Theory-to-operator mapping
-
-Use a compact alignment of operator, relevant relation or relation set, interval schematic, and any restriction. Verify the mapping against the selected paper. Do not infer a one-to-one relationship from similar names or collapse several relations into an unsupported equivalence.
-
-State assumptions beside the mapping when they explain excluded relations. Keep historical attribution separate from the scientific claim about what the method implements.
-
-## Inspect the figure
-
-Trace a complete input-to-output path and a complete feedback cycle. Check every edge against the source. Compare the schema and instance node by node. Confirm that visual size, fill, or placement does not accidentally imply unsupported importance, activation, exclusivity, or certainty.
+In the [GroundTSSyn example](../assets/examples/synthesis-variation.svg), each draw selects a total event duration, allocates it among ordered primitives and samples amplitudes within their configured ranges. Occurrence variation can then perturb parameters, re-synthesize and check constraints. The two draws illustrate the supervision: the same description refers to the same ordered pattern across changes of timing and amplitude. Keep performance claims with the experiment that tests them. See [Hou et al., Appendix A.2](https://aclanthology.org/2026.findings-emnlp.229/).

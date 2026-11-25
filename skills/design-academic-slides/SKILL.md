@@ -1,128 +1,37 @@
 ---
 name: design-academic-slides
-description: Create and revise evidence-led academic presentations with editable PowerPoint content, readable research figures, precise method diagrams, honest result charts, and consistent visual semantics. Use for paper-to-talk conversion, conference or seminar slides, research updates, architecture figures embedded in decks, and iterative slide-annotation fixes. Apply the SELA profile only to SELA or an explicitly requested matching style. Do not use as the primary workflow for academic posters or generic business pitch decks.
+description: Create or revise evidence-led academic presentations and industrial research seminars. Use for paper-to-talk conversion, multi-paper narratives, vector architecture diagrams, annotated time-series examples, result tables and charts, scientific English, and versioned PowerPoint or commentable review decks.
+metadata:
+  version: "0.2.0"
+  source_edition: "v2026.11.25.3"
 ---
 
-# Design Academic Slides
+# Design academic slides
 
-Make the research easy to follow, the evidence easy to inspect, and the result easy to edit.
+**Edition v2026.11.25.3.** Work from the latest accepted presentation and the selected paper or data release. Preserve the author's argument, exact scientific terms and evidence. Use this skill to decide what to say and show. Use the available presentation backend to implement and test those choices.
 
-Treat the user's current instructions and latest accepted design as the working contract. Use the defaults below only where that contract is silent. Resolve routine layout choices without repeatedly requesting approval.
+**Preferred fonts.** Use Newsreader for slide and section titles, and Inter for body text, tables, references, axes and diagram labels. Apply this pairing to new talks and to design revisions unless the user specifies a different typeface or requires a template with its own fonts. If the latest reviewed deck is a compatibility copy, carry its content edits forward and restore the preferred pair in the main edition. A local loading or save warning calls for checking the original fonts and embedding. Put any necessary substitutions in a separately named compatibility copy.
 
-## Read the appropriate references
+## Choose the appropriate guidance
 
-| Work to do | Read |
-| --- | --- |
-| Establish the story, select claims, summarize a paper | [Scientific content](references/scientific-content.md) |
-| Set layout, typography, density, imagery, or cover | [Visual design](references/visual-design.md) |
-| Draw a system, agents, tree, or structured representation | [Scientific diagrams](references/scientific-diagrams.md) |
-| Present experiments, benchmarks, or ablations | [Experimental evidence](references/experimental-evidence.md) |
-| Apply comments, export PPTX, or verify a deliverable | [Revision and delivery](references/revision-and-delivery.md) |
-| Continue SELA / Grammar of the Wave | [SELA profile](references/sela-profile.md), plus relevant references above |
+| Task | Read |
+|---|---|
+| Build a seminar around a question, combine papers or plan the closing section | [Scientific content and seminar structure](references/scientific-content.md) |
+| Set type, compose the cover, place author lists, branding and references | [Visual design](references/visual-design.md) |
+| Edit academic English, select visible annotations or remove figure commentary | [Writing and annotation discipline](references/writing-and-annotations.md) |
+| Draw a model, logic tree, measured interval, duration comparison or synthetic training example | [Scientific diagrams](references/scientific-diagrams.md) |
+| Compare metrics, thresholds, inference time or conditional scores | [Experimental evidence](references/experimental-evidence.md) |
+| Implement review comments, check the export and return a reviewable revision | [Revision and delivery](references/revision-and-delivery.md) |
+| Continue the SELA and GroundingMOMENT seminar | [SELA seminar profile](references/sela-profile.md) |
+| Identify design sources and credit the external skills actually used | [Sources and attribution](references/sources.md) |
+| Follow worked examples in Chinese, including how to use this package | [中文使用手册](references/guide.zh-CN.md) |
 
-Read only the references needed for the task. For a cover-only edit, do not repeat the paper review or redesign the experiment section.
+## Work from the audience's question
 
-## 1. Establish the working contract
+1. Establish who is listening, what they know, what they should be able to judge, the requested language, time and deliverable. Reuse decisions already made. If the user requests outline approval, deliver the page-by-page argument and wait for approval before production.
+2. Give each slide one job. Keep the reference supporting its central claim at hand. Use a concrete task to introduce terminology. In a multi-paper talk, introduce each paper where it answers the audience's next question. Describe a future method as a proposal.
+3. Design precise figures at their final display size. Inspect the source and a separate vector proof before inserting the figure. Keep editable source text and geometry. Carry original artwork at its native fidelity. In paired examples, fix the comparison scale and identify what varies. Preserve native tables, numerical workbooks and original media where present. Assign colors to meanings and reinforce them with labels or position.
+4. Read the slide aloud. Keep the one sentence the audience needs to interpret the evidence. Move supporting detail into the notes. Delete repetitions and production commentary from the slide **and its figure source**. Cite the paper, figure, table, data or demo close enough for the audience to identify it.
+5. Apply local reviews to the named revision. Match the selected object and read replies. Decide what the new request adds, replaces or protects. Keep the reviewed copy intact when versioned delivery is requested. Test font availability in the intended editor, including save-as. Check the requested PPTX and, when included in the agreed delivery, its commentable copy and a PDF exported from that same final PPTX.
 
-Identify the audience, speaking duration if supplied, requested language, slide count, output format, source paper version, current accepted deck, and required changes. Reuse known decisions. Ask only when a missing answer would materially alter the result; otherwise proceed with a stated assumption.
-
-Keep the language of an accepted deck unless the user requests a change. Use concise academic prose, retain necessary technical terms, and remove production commentary, filler slogans, and unsupported caveats from slide copy.
-
-For an academic talk without a format instruction, prefer editable PPTX when the environment supports file delivery. Honor explicit PowerPoint, Google Slides, or other destinations. Preserve an existing deck's dimensions. Use 16:9 for a new talk unless a template or venue says otherwise.
-
-Separate three kinds of requirements:
-
-- **Scientific invariants:** facts, labels, values, topology, model names, evaluation settings, and source wording that must survive an edit.
-- **Presentation decisions:** ordering, scale, colors, typography, grouping, visual emphasis, and animation.
-- **Requested changes:** the exact objects or slides the user wants changed now.
-
-For several annotation rounds, maintain a short private change checklist. Apply the latest instruction for each element while preserving earlier decisions that remain compatible. Never restart from an older version merely because its builder is convenient.
-
-## 2. Define the scientific story
-
-Give every slide one communicative job. Preserve enough evidence and explanation to do that job. One job may require several coordinated panels; it does not imply a mostly empty slide.
-
-For a full talk, consider this sequence and adapt it to the time budget:
-
-1. Task and concrete input/output example.
-2. Research difficulty and the gap in existing approaches.
-3. Representation and its theoretical basis.
-4. System operation, including feedback and outputs.
-5. Evaluation design and main results.
-6. Component quality, ablation, and a complete case.
-7. Evidence-supported takeaways and an open limitation.
-
-Do not force this sequence or add pages to a fixed-count request. For a three-page research update, motivation, input/output, and method may be sufficient. Put extra material in backup slides only if the requested slide count permits it.
-
-Use the selected paper and current supplied results as the source of truth. Keep versions separate. Name the precise baseline, model, metric, and setting shown. Do not add invented results to fill a requested model family.
-
-## 3. Build the visual hierarchy
-
-Use a restrained academic composition: a clear heading, a dominant explanatory figure or evidence view, and short supporting text. Favor open layouts with alignment and whitespace over repeated cards, thick enclosing panels, or decorative containers.
-
-Use these starting points for a new 16:9 deck; adapt to the actual template and render:
-
-| Element | Starting point in PowerPoint points |
-| --- | --- |
-| Cover title | 36–48 pt |
-| Slide heading | 28–36 pt |
-| Main explanatory text | 20–24 pt |
-| Figure labels and data labels | 16–20 pt |
-| Secondary source notes | 12–14 pt, with full details in notes |
-
-Set type sizes in the units required by the authoring tool. At 96 DPI, 1 pt equals 4/3 CSS px. Do not silently substitute px for pt.
-
-Use one primary sans-serif family and a stable hierarchy. Use a deliberate secondary typeface only for an appropriate purpose, such as a short quotation or a requested calligraphic cover. Keep authors, affiliations, and meaningful axis labels readable.
-
-Increase useful density by removing repetition, tightening oversized title regions, enlarging evidence, and improving grouping. Preserve room for the audience to track the speaker. Do not shrink body text to simulate density or copy a poster's entire reading load into a talk.
-
-## 4. Make method figures explain the method
-
-Show actual input objects, transformations, intermediate representations, outputs, and feedback. Label arrows with what passes through them. Give each block a short functional label; put long explanations in adjacent prose or notes.
-
-Use exact scientific structure. Preserve edges, operators, channel associations, active states, and temporal relationships. Label actual model names when relevant and supplied. Make data objects visually distinct from processing modules.
-
-Keep semantically equivalent nodes the same size. Maintain one meaning for each color and line style. Distinguish templates from instantiated objects and active evidence from inactive alternatives. Use the same notation in overview, explanation, and case-study slides.
-
-Use original vector assets or native editable diagram elements for exact structures. Use generated or retrieved artwork for supporting imagery when appropriate; never synthesize scientific plots, numerical results, or exact topology as decorative images.
-
-## 5. Turn results into comparisons
-
-Choose the view around the question: bars for category comparisons, paired views for ablations, tables for precise multidimensional results, and timelines for localization. Keep native charts and editable underlying data when the output format supports them.
-
-Preserve the full meaning of each result: metric, threshold, unit, dataset, backbone, supervision regime, and aggregation. Use a common scale only for comparable quantities. Use light/dark overlapping bars only under the conditions in [Experimental evidence](references/experimental-evidence.md).
-
-Evaluate intermediate stages when they are part of the contribution. Distinguish syntax or compilation success from structural fidelity, semantic alignment, evidence quality, and end-task performance. Do not label all of these simply “accuracy.”
-
-## 6. Iterate locally and preserve editability
-
-Before editing, inspect the affected slide and its object structure. Record the intended change and protected content. Work on the latest accepted version and produce a new revision.
-
-Keep text as text; charts and tables as native objects; exact diagrams as editable elements where requested. Keep decorative title artwork as a separate image layer. Preserve source image proportions, logos, chart workbooks, speaker notes, and links.
-
-For a local edit, adjust only the affected composition and dependent elements. A title removal may justify enlarging its figure; a cover edit does not justify changing experiments elsewhere.
-
-## 7. Verify and deliver
-
-Use the environment's current presentation-authoring and validation workflow. This skill specifies design and evidence requirements, not a particular backend. Do not copy stale internal API names, fixed scratch paths, or environment-specific helpers into a new project.
-
-Verify in this order:
-
-1. **Content:** required material, source fidelity, model names, values, theory boundaries, and supported takeaways.
-2. **Semantics:** diagram edges, visual state encoding, chart metrics, axes, and uncertainty statements.
-3. **Appearance:** render every final slide; inspect changed slides at full size and scan the whole deck for unintended changes.
-4. **Editability:** inspect text, tables, charts, embedded workbook relationships, and image layers in the exported file.
-5. **Use:** check links, QR codes, media, and slide-advance settings where relevant to the request.
-
-Treat intentional cover overlap differently from an accidental collision. A passed file validator does not establish visual quality or scientific correctness. A static preview does not establish that an animation works.
-
-Deliver the requested deck and clearly identify any material limitation. Keep build logs, tests, temporary renders, and implementation commentary out of the slides. State that PowerPoint was checked only if the final file was actually opened there.
-
-## Completion criteria
-
-- The task, method, and evidence can be understood at normal presentation size.
-- Required scientific content is present without unsupported embellishment.
-- Input, output, feedback, and visual states are explicit.
-- Comparisons preserve their metrics and evaluation conditions.
-- The deck remains editable in the requested format.
-- The final revision implements the comments and preserves unrelated content.
+Use the seminar profile only for its named project or when a user chooses that design. Treat its author line, branding, exact type sizes, page budget and paper order as examples. The user's current brief governs the next presentation.
