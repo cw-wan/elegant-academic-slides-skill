@@ -47,23 +47,23 @@
     },
     {
       "path": "previews/overview.png",
-      "bytes": 637423,
-      "sha256": "150a782a8a3e8a78897424b25e68ab16793eb5c151c5e6abfac8c939c85dac5b",
+      "bytes": 654385,
+      "sha256": "ff047d9e4dec2f57a385ed504f55575576b52d608245b9e6968c3d2edfbccc60",
       "pdf_pages": [
         1,
-        7,
+        6,
         9,
+        10,
         14,
-        15,
-        18
+        15
       ]
     },
     {
-      "path": "previews/event-logic-tree.png",
-      "bytes": 135405,
-      "sha256": "f9745955269c89662aff00ec1dc712247ffc4a6c84b9af352e45d99fce55ccc0",
+      "path": "previews/sela-introduction.png",
+      "bytes": 158101,
+      "sha256": "a3964d578521be2cc6c7634d5b4e220427ac86a3a8bdb9a93584fabc77640843",
       "pdf_pages": [
-        7
+        6
       ]
     },
     {
@@ -75,19 +75,19 @@
       ]
     },
     {
+      "path": "previews/parsing-quality.png",
+      "bytes": 109496,
+      "sha256": "bd7b520dd0cc952b352baddd35c104bdc3d93300a045a78b4892ee192e285f3c",
+      "pdf_pages": [
+        10
+      ]
+    },
+    {
       "path": "previews/synthesis-variation.png",
       "bytes": 142374,
       "sha256": "fdc602564499273ab9f40495a8cced4865a38583ea69c376d597449ea216f206",
       "pdf_pages": [
         14
-      ]
-    },
-    {
-      "path": "previews/accuracy-latency.png",
-      "bytes": 77995,
-      "sha256": "eba0a43d93b07fddd185b96555390f354b044d173b07bf5863f3a88ff50123a5",
-      "pdf_pages": [
-        18
       ]
     }
   ],

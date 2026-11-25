@@ -33,26 +33,26 @@ Images are rendered directly from the supplied PDF. Click to open at full resolu
 
 [![Seminar cover](previews/cover.png)](previews/cover.png)
 
-[![Six selected slides: cover, Event Logic Tree, SELA, synthesis, architecture, and metrics](previews/overview.png)](previews/overview.png)
+[![Slides 1, 6, 9, 10, 14, and 15: cover, SELA introduction, method, parsing quality, synthesis, and architecture](previews/overview.png)](previews/overview.png)
 
 <details>
 <summary>Selected slides at full size</summary>
 
-### Slide 7: Event Logic Tree
+### Slide 6: SELA paper introduction
 
-[![Event Logic Tree and temporal elasticity](previews/event-logic-tree.png)](previews/event-logic-tree.png)
+[![Grammar of the Wave paper introduction and event example](previews/sela-introduction.png)](previews/sela-introduction.png)
 
 ### Slide 9: SELA method
 
 [![SELA signal inspection method](previews/sela-method.png)](previews/sela-method.png)
 
+### Slide 10: ELT parsing quality
+
+[![Pass rate, structural fidelity, primitive accuracy, coverage, and semantic alignment](previews/parsing-quality.png)](previews/parsing-quality.png)
+
 ### Slide 14: Synthetic training examples
 
 [![GroundTSSyn duration and amplitude variation](previews/synthesis-variation.png)](previews/synthesis-variation.png)
-
-### Slide 18: Accuracy and latency
-
-[![GroundTSBench metrics and latency comparison](previews/accuracy-latency.png)](previews/accuracy-latency.png)
 
 </details>
 

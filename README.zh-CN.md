@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">
-    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview.png" width="920" alt="六页实际报告预览：封面、逻辑树、方法、合成示例、模型结构和实验比较">
+    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview.png" width="920" alt="报告第 1、6、9、10、14、15 页：封面、SELA 介绍、方法、解析质量、合成示例和模型结构">
   </a>
 </p>
 
