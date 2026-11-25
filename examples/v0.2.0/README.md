@@ -8,6 +8,6 @@ This archive accompanies repository release **v0.2.0**, based on the submitted p
 | --- | --- | --- |
 | [SLB AI Lab Webinar: Language-Guided Time-Series Perception](slb-webinar-2026-11-25/README.md) | 23-slide PPTX, 23-page PDF, six preview PNGs, file manifest | Seminar v10, 25 November 2026 |
 
-[![Preview of the archived seminar](slb-webinar-2026-11-25/previews/overview.png)](slb-webinar-2026-11-25/README.md)
+[![Preview of the archived seminar](slb-webinar-2026-11-25/previews/overview-pages-01-06-09-10-14-15.png)](slb-webinar-2026-11-25/README.md)
 
 The original PPTX, PDF, and design document are preserved. The [example record](slb-webinar-2026-11-25/README.md) and [manifest](slb-webinar-2026-11-25/example.json) identify the submitted files and publication checks. A full agent execution log or deck-generation script was not supplied.

@@ -33,7 +33,7 @@ Images are rendered directly from the supplied PDF. Click to open at full resolu
 
 [![Seminar cover](previews/cover.png)](previews/cover.png)
 
-[![Slides 1, 6, 9, 10, 14, and 15: cover, SELA introduction, method, parsing quality, synthesis, and architecture](previews/overview.png)](previews/overview.png)
+[![Slides 1, 6, 9, 10, 14, and 15: cover, SELA introduction, method, parsing quality, synthesis, and architecture](previews/overview-pages-01-06-09-10-14-15.png)](previews/overview-pages-01-06-09-10-14-15.png)
 
 <details>
 <summary>Selected slides at full size</summary>
