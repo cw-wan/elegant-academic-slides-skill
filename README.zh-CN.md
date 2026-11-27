@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">
-    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview-pages-01-06-09-10-14-15.png?v=v19-6ccf0023d0e0" width="920" alt="v19 报告第 1、7、10、11、16、17 页：封面、SELA 介绍、方法、解析质量、合成示例和模型结构">
+    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview-pages-01-06-09-10-14-15.png?v=v20-fd66cf1a4c2c" width="920" alt="v20 报告第 1、7、10、11、16、17 页：封面、SELA 介绍、方法、解析质量、合成示例和模型结构">
   </a>
 </p>
 
@@ -39,7 +39,7 @@
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/SLB-Webinar-261125.pdf">阅读 PDF</a>
 </p>
 
-预览直接从提供的 **v19 PDF** 渲染，已于 2026 年 11 月 27 日刷新。范例页提供当前演示文稿、历史 v10 设计记录、参考来源和完整尺寸图片；PPTX 与 PDF 的归档文件名保持不变，已有链接可继续使用。
+预览直接从提供的 **v20 PDF** 渲染，已于 2026 年 11 月 27 日刷新。范例页提供当前演示文稿、历史 v10 设计记录、参考来源和完整尺寸图片；PPTX 与 PDF 的归档文件名保持不变，已有链接可继续使用。
 
 ## 可以做什么
 

@@ -6,9 +6,9 @@ Examples are archived by **repository skill release**, then by example name. Eac
 
 | Release | Associated source edition | Example |
 | --- | --- | --- |
-| [v0.2.0](v0.2.0/README.md) | v2026.11.25.3 | [Language-Guided Time-Series Perception: Solutions and Challenges](v0.2.0/slb-webinar-2026-11-25/README.md), v19, 25 slides, English, PPTX + PDF |
+| [v0.2.0](v0.2.0/README.md) | v2026.11.25.3 | [Language-Guided Time-Series Perception: Solutions and Challenges](v0.2.0/slb-webinar-2026-11-25/README.md), v20, 25 slides, English, PPTX + PDF |
 
-[![Six-slide preview of the SLB seminar](v0.2.0/slb-webinar-2026-11-25/previews/overview-pages-01-06-09-10-14-15.png?v=v19-6ccf0023d0e0)](v0.2.0/slb-webinar-2026-11-25/README.md)
+[![Six-slide preview of the SLB seminar](v0.2.0/slb-webinar-2026-11-25/previews/overview-pages-01-06-09-10-14-15.png?v=v20-fd66cf1a4c2c)](v0.2.0/slb-webinar-2026-11-25/README.md)
 
 The [v0.1.0 release](https://github.com/cw-wan/elegant-academic-slides-skill/releases/tag/v0.1.0) predates the first full presentation example; no placeholder example folder is created for it.
 

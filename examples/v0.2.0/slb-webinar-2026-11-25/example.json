@@ -12,7 +12,7 @@
     "source_edition": "v2026.11.25.3",
     "source_archive": "design-academic-slides_v2026.11.25.3.zip",
     "source_archive_sha256": "0b1735115f9d34a5fc359455b794a9eb93b9fea44f7f9f099198f2f0a898f053",
-    "association": "The skill association was recorded for the original example. The v19 PPTX and PDF were supplied separately on 2026-11-27; no new skill package or generation transcript accompanied them."
+    "association": "The skill association was recorded for the original example. The v20 PPTX and PDF were supplied separately on 2026-11-27; no new skill package or generation transcript accompanied them."
   },
   "design_record": {
     "path": "Seminar_Writing_Design_and_Sources_v10.md",
@@ -23,13 +23,13 @@
   "files": [
     {
       "path": "SLB-Webinar-261125.pptx",
-      "bytes": 15807597,
-      "sha256": "3de53513c6e665be548c2e266600fe1663833afe0adea523de4df5a73b76b75f"
+      "bytes": 15913673,
+      "sha256": "1136ede93082ea66f7141ac36f875e41e772bba5775913460fd05437ee883e21"
     },
     {
       "path": "SLB-Webinar-261125.pdf",
-      "bytes": 2632003,
-      "sha256": "13a23dff8e0d3f605c158429c1b1c7adfcf9ecfe2277ed2767c7df9915d945c7"
+      "bytes": 2638017,
+      "sha256": "6f517371357428efbc3bd31cc800baff9aba36a14430f74f003f3f8c6d14a4e7"
     },
     {
       "path": "Seminar_Writing_Design_and_Sources_v10.md",
@@ -48,8 +48,8 @@
     },
     {
       "path": "previews/overview-pages-01-06-09-10-14-15.png",
-      "bytes": 618973,
-      "sha256": "6ccf0023d0e0d03d795514658cc4dec79b80c04bf0014f8962a4de49319e87da",
+      "bytes": 622513,
+      "sha256": "fd66cf1a4c2c6bcccb98efb07bed4a0b03919be6c1f2c11aa8633dfb64cbdb36",
       "pdf_pages": [
         1,
         7,
@@ -85,8 +85,8 @@
     },
     {
       "path": "previews/synthesis-variation.png",
-      "bytes": 138365,
-      "sha256": "230239a7dc993d56a731855777314a62743d1e54a517858e751c8cc58925e2a8",
+      "bytes": 139135,
+      "sha256": "f2e400432b95123004e3c8a391e760ece2e553bd51b0ae00ccad4f68b5fbfcd7",
       "pdf_pages": [
         16
       ]
@@ -102,7 +102,7 @@
     "svg_resources": 25,
     "media_playback_tested": false,
     "design_record_svg_count": 18,
-    "svg_count_note": "The unchanged historical v10 design record reports 18 figures; the supplied v19 PPTX contains 25 SVG resources and 25 SVG references.",
+    "svg_count_note": "The unchanged historical v10 design record reports 18 figures; the supplied v20 PPTX contains 25 SVG resources and 25 SVG references.",
     "native_table_slides": [
       11,
       13,
@@ -118,45 +118,52 @@
     "pdf_pages_rendered": 25
   },
   "presentation_revision": {
-    "version": "v19",
+    "version": "v20",
     "updated_on": "2026-11-27",
     "supplied_files": [
-      "Language_Guided_Time_Series_Perception_v19.pptx",
-      "Language_Guided_Time_Series_Perception_v19.pdf"
+      "Language_Guided_Time_Series_Perception_v20.pptx",
+      "Language_Guided_Time_Series_Perception_v20.pdf"
     ],
     "archived_filenames_preserved": true,
-    "note": "The current example on main was refreshed with supplied v19 files. The v0.2.0 release tag remains the original snapshot."
+    "note": "The current example on main was refreshed with supplied v20 files. The v0.2.0 release tag remains the original snapshot.",
+    "previous_revision": "v19"
   },
   "preview_page_mapping": [
     {
       "topic": "Cover",
       "previous_page": 1,
-      "current_page": 1
+      "current_page": 1,
+      "original_archive_page": 1
     },
     {
       "topic": "SELA paper introduction",
-      "previous_page": 6,
-      "current_page": 7
+      "previous_page": 7,
+      "current_page": 7,
+      "original_archive_page": 6
     },
     {
       "topic": "SELA method",
-      "previous_page": 9,
-      "current_page": 10
+      "previous_page": 10,
+      "current_page": 10,
+      "original_archive_page": 9
     },
     {
       "topic": "ELT parsing quality",
-      "previous_page": 10,
-      "current_page": 11
+      "previous_page": 11,
+      "current_page": 11,
+      "original_archive_page": 10
     },
     {
       "topic": "Synthetic training examples",
-      "previous_page": 14,
-      "current_page": 16
+      "previous_page": 16,
+      "current_page": 16,
+      "original_archive_page": 14
     },
     {
       "topic": "GroundingMOMENT architecture",
-      "previous_page": 15,
-      "current_page": 17
+      "previous_page": 17,
+      "current_page": 17,
+      "original_archive_page": 15
     }
   ]
 }

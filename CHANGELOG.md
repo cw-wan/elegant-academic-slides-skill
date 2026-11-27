@@ -1,6 +1,13 @@
 # Changelog
 
-## Example refresh — 2026-11-27
+## Example refresh to v20 — 2026-11-27
+
+- Replace the SLB webinar PPTX and PDF with the supplied v20 files, keeping their established archive filenames and paths.
+- Retain 25 slides and confirm that the showcased topics remain on pages 1, 7, 10, 11, 16, and 17.
+- Re-render the previews from the v20 PDF, including the revised paired time-series examples and explanation on slide 16, and update README image cache parameters.
+- Update the current revision, file hashes, and page-tracking record. The skill package and historical v10 design document are unchanged.
+
+## Example refresh to v19 — 2026-11-27
 
 - Replace the SLB webinar example on `main` with the supplied v19 PPTX and PDF, preserving `SLB-Webinar-261125.pptx` and `SLB-Webinar-261125.pdf` and their existing paths.
 - Update the example from 23 to 25 slides. Track the six showcased topics by title: pages 1, 6, 9, 10, 14, 15 become 1, 7, 10, 11, 16, 17.
