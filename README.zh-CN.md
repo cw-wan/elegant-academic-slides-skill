@@ -27,19 +27,19 @@
 
 <p align="center">
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">
-    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview-pages-01-06-09-10-14-15.png" width="920" alt="报告第 1、6、9、10、14、15 页：封面、SELA 介绍、方法、解析质量、合成示例和模型结构">
+    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview-pages-01-06-09-10-14-15.png?v=v19-6ccf0023d0e0" width="920" alt="v19 报告第 1、7、10、11、16、17 页：封面、SELA 介绍、方法、解析质量、合成示例和模型结构">
   </a>
 </p>
 
 <p align="center">
   <strong>Language-Guided Time-Series Perception: Solutions and Challenges</strong><br>
-  <sub>Chenwei Wan · SLB AI Lab Webinar · 23 页 · 2026 年 11 月 25 日</sub><br><br>
+  <sub>Chenwei Wan · SLB AI Lab Webinar · 25 页 · 2026 年 11 月 25 日</sub><br><br>
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">查看完整范例</a> ·
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/SLB-Webinar-261125.pptx?raw=true">下载 PPTX</a> ·
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/SLB-Webinar-261125.pdf">阅读 PDF</a>
 </p>
 
-预览直接从提供的 PDF 渲染。范例页保留了原始演示文稿、设计记录、参考来源和完整尺寸图片。
+预览直接从提供的 **v19 PDF** 渲染，已于 2026 年 11 月 27 日刷新。范例页提供当前演示文稿、历史 v10 设计记录、参考来源和完整尺寸图片；PPTX 与 PDF 的归档文件名保持不变，已有链接可继续使用。
 
 ## 可以做什么
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## Example refresh — 2026-11-27
+
+- Replace the SLB webinar example on `main` with the supplied v19 PPTX and PDF, preserving `SLB-Webinar-261125.pptx` and `SLB-Webinar-261125.pdf` and their existing paths.
+- Update the example from 23 to 25 slides. Track the six showcased topics by title: pages 1, 6, 9, 10, 14, 15 become 1, 7, 10, 11, 16, 17.
+- Refresh all six preview images in place and add content-based version parameters to README image URLs to avoid stale caches.
+- Update file hashes and structural counts: 25 notes pages, four native tables, three embedded videos, and 25 SVG resources.
+- Retain the v10 design record and v0.2.0 release tag as historical records; the skill package is unchanged.
+
 ## v0.2.0 — 2026-11-25
 
 ### Skill

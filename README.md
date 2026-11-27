@@ -27,19 +27,19 @@
 
 <p align="center">
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">
-    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview-pages-01-06-09-10-14-15.png" width="920" alt="Seminar slides 1, 6, 9, 10, 14, and 15: cover, SELA introduction, method, parsing quality, synthesis, and architecture">
+    <img src="examples/v0.2.0/slb-webinar-2026-11-25/previews/overview-pages-01-06-09-10-14-15.png?v=v19-6ccf0023d0e0" width="920" alt="Seminar v19 slides 1, 7, 10, 11, 16, and 17: cover, SELA introduction, method, parsing quality, synthesis, and architecture">
   </a>
 </p>
 
 <p align="center">
   <strong>Language-Guided Time-Series Perception: Solutions and Challenges</strong><br>
-  <sub>Chenwei Wan · SLB AI Lab Webinar · 23 slides · 25 November 2026</sub><br><br>
+  <sub>Chenwei Wan · SLB AI Lab Webinar · 25 slides · 25 November 2026</sub><br><br>
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/README.md">Explore the case study</a> ·
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/SLB-Webinar-261125.pptx?raw=true">Download PPTX</a> ·
   <a href="examples/v0.2.0/slb-webinar-2026-11-25/SLB-Webinar-261125.pdf">Read the PDF</a>
 </p>
 
-The preview is rendered from the supplied PDF. The example includes the original presentation, design record, source links, and full-size images.
+The preview is rendered from the supplied **v19 PDF**, refreshed on 27 November 2026. The example includes the current presentation, the historical v10 design record, source links, and full-size images. Its PPTX and PDF filenames remain unchanged so existing links continue to work.
 
 ## What it helps with
 

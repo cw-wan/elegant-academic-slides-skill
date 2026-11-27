@@ -12,23 +12,24 @@
     "source_edition": "v2026.11.25.3",
     "source_archive": "design-academic-slides_v2026.11.25.3.zip",
     "source_archive_sha256": "0b1735115f9d34a5fc359455b794a9eb93b9fea44f7f9f099198f2f0a898f053",
-    "association": "User-supplied example and skill package archived together; no original generation transcript is included."
+    "association": "The skill association was recorded for the original example. The v19 PPTX and PDF were supplied separately on 2026-11-27; no new skill package or generation transcript accompanied them."
   },
   "design_record": {
     "path": "Seminar_Writing_Design_and_Sources_v10.md",
     "document_revision": "v10",
-    "preserved_as_supplied": true
+    "preserved_as_supplied": true,
+    "scope": "Historical v10 design record retained unchanged; its slide numbers and counts refer to the earlier presentation."
   },
   "files": [
     {
       "path": "SLB-Webinar-261125.pptx",
-      "bytes": 15362821,
-      "sha256": "a5bfcd28095063a7acd61b3de8156628d2db575d36da4894c17bb7a362e26ac4"
+      "bytes": 15807597,
+      "sha256": "3de53513c6e665be548c2e266600fe1663833afe0adea523de4df5a73b76b75f"
     },
     {
       "path": "SLB-Webinar-261125.pdf",
-      "bytes": 3467009,
-      "sha256": "2d0aa4f1f6507266c240a61f44f03a21e7676aaf32f31e31066ea5c376db4a53"
+      "bytes": 2632003,
+      "sha256": "13a23dff8e0d3f605c158429c1b1c7adfcf9ecfe2277ed2767c7df9915d945c7"
     },
     {
       "path": "Seminar_Writing_Design_and_Sources_v10.md",
@@ -39,68 +40,123 @@
   "previews": [
     {
       "path": "previews/cover.png",
-      "bytes": 94816,
-      "sha256": "2e81d5658afcd494e7e489d5265f9e968292460c8e8304cc8901cb04ce2c3af5",
+      "bytes": 97881,
+      "sha256": "588fd7627f5cc662aabb3209987291cdbfefc93fb9a4aa9cfd80f531f79a3220",
       "pdf_pages": [
         1
       ]
     },
     {
       "path": "previews/overview-pages-01-06-09-10-14-15.png",
-      "bytes": 654385,
-      "sha256": "ff047d9e4dec2f57a385ed504f55575576b52d608245b9e6968c3d2edfbccc60",
+      "bytes": 618973,
+      "sha256": "6ccf0023d0e0d03d795514658cc4dec79b80c04bf0014f8962a4de49319e87da",
       "pdf_pages": [
         1,
-        6,
-        9,
+        7,
         10,
-        14,
-        15
+        11,
+        16,
+        17
       ]
     },
     {
       "path": "previews/sela-introduction.png",
-      "bytes": 158101,
-      "sha256": "a3964d578521be2cc6c7634d5b4e220427ac86a3a8bdb9a93584fabc77640843",
+      "bytes": 156375,
+      "sha256": "5d4987bdc26e464c13d1af259b2bf6a05c3145f54ed926f138b21a25faebe1e1",
       "pdf_pages": [
-        6
+        7
       ]
     },
     {
       "path": "previews/sela-method.png",
-      "bytes": 117857,
-      "sha256": "d00f76f915b33cc7f30e1529fb23163c4689dd71d9334b661c8e8ac302abc2f3",
-      "pdf_pages": [
-        9
-      ]
-    },
-    {
-      "path": "previews/parsing-quality.png",
-      "bytes": 109496,
-      "sha256": "bd7b520dd0cc952b352baddd35c104bdc3d93300a045a78b4892ee192e285f3c",
+      "bytes": 118993,
+      "sha256": "e44d65141c01e8f632de2d5534b8748544cb3ceedbaa3569057e2e2c8b261678",
       "pdf_pages": [
         10
       ]
     },
     {
-      "path": "previews/synthesis-variation.png",
-      "bytes": 142374,
-      "sha256": "fdc602564499273ab9f40495a8cced4865a38583ea69c376d597449ea216f206",
+      "path": "previews/parsing-quality.png",
+      "bytes": 87947,
+      "sha256": "f431cc55a276ec8e473b03b97cc1c3595c74db9ab7631af08f41d6af8e586d4c",
       "pdf_pages": [
-        14
+        11
+      ]
+    },
+    {
+      "path": "previews/synthesis-variation.png",
+      "bytes": 138365,
+      "sha256": "230239a7dc993d56a731855777314a62743d1e54a517858e751c8cc58925e2a8",
+      "pdf_pages": [
+        16
       ]
     }
   ],
   "inspection": {
-    "pdf_pages": 23,
-    "pptx_slides": 23,
-    "speaker_notes": 23,
-    "native_tables": 3,
+    "pdf_pages": 25,
+    "pptx_slides": 25,
+    "speaker_notes": 25,
+    "native_tables": 4,
     "embedded_mp4_files": 3,
     "embedded_font_files": 5,
-    "svg_resources": 17,
+    "svg_resources": 25,
     "media_playback_tested": false,
     "design_record_svg_count": 18,
-    "svg_count_note": "The supplied design record reports 18 SVGs. The delivered PPTX contains 17 SVG resources; slide 6 uses a PNG for its combined figure."
-  }
+    "svg_count_note": "The unchanged historical v10 design record reports 18 figures; the supplied v19 PPTX contains 25 SVG resources and 25 SVG references.",
+    "native_table_slides": [
+      11,
+      13,
+      23,
+      24
+    ],
+    "embedded_video_slides": [
+      12,
+      18,
+      19
+    ],
+    "svg_references": 25,
+    "pdf_pages_rendered": 25
+  },
+  "presentation_revision": {
+    "version": "v19",
+    "updated_on": "2026-11-27",
+    "supplied_files": [
+      "Language_Guided_Time_Series_Perception_v19.pptx",
+      "Language_Guided_Time_Series_Perception_v19.pdf"
+    ],
+    "archived_filenames_preserved": true,
+    "note": "The current example on main was refreshed with supplied v19 files. The v0.2.0 release tag remains the original snapshot."
+  },
+  "preview_page_mapping": [
+    {
+      "topic": "Cover",
+      "previous_page": 1,
+      "current_page": 1
+    },
+    {
+      "topic": "SELA paper introduction",
+      "previous_page": 6,
+      "current_page": 7
+    },
+    {
+      "topic": "SELA method",
+      "previous_page": 9,
+      "current_page": 10
+    },
+    {
+      "topic": "ELT parsing quality",
+      "previous_page": 10,
+      "current_page": 11
+    },
+    {
+      "topic": "Synthetic training examples",
+      "previous_page": 14,
+      "current_page": 16
+    },
+    {
+      "topic": "GroundingMOMENT architecture",
+      "previous_page": 15,
+      "current_page": 17
+    }
+  ]
 }
